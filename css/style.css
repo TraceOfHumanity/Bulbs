@@ -392,5 +392,62 @@ h6 {
     font-size: 30px;
   }
 }
+.main {
+  padding-top: 70px;
+}
+
+.footer .footer__top {
+  background: #222629;
+  padding: 25px 0;
+}
+.footer .footer__top .container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer__top .footer__topLeft {
+  position: relative;
+}
+.footer .footer__top .footer__topLeft .footer__topLeft-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.footer .footer__top .footer__topRight {
+  display: flex;
+  gap: 50px;
+}
+.footer .footer__top .footer__topRight .footer__listItem {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #2B901A;
+}
+.footer .footer__bottom {
+  background: #F2F2F2;
+}
+.footer .footer__bottom .container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer__bottom .footer__bottom-text .bottom-text__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #434343;
+}
+.footer .footer__bottom .footer__bottom-text .bottom-text__text .themGreen {
+  color: #2B901A;
+}
 
 /*# sourceMappingURL=style.css.map */
