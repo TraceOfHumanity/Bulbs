@@ -1892,6 +1892,175 @@ h6 {
 .main .product__block1 .parTop {
   margin-top: 20px;
 }
+.main .contact__block1 .title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #434343;
+}
+.main .contact__form {
+  margin-top: 20px;
+  background: url(../img/image\ 21.jpg);
+  background-size: cover;
+  padding: 36px 0 38px;
+}
+.main .contact__form .form__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.main .contact__form .top__colons {
+  width: 350px;
+}
+.main .contact__form .titleInput {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  margin-bottom: 10px;
+  color: #434343;
+}
+.main .contact__form .input {
+  width: 350px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  padding: 13px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.main .contact__form .input:focus-within {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 1px #ababab;
+}
+.main .contact__form .inputIn {
+  width: 300px;
+  background: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.main .contact__form .midle__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #434343;
+}
+.main .contact__form .radio input[type="radio"] {
+  opacity: 0;
+}
+.main .contact__form .radio label {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  padding-right: 32px;
+}
+.main .contact__form .radio label:nth-last-child(1) {
+  padding-right: 0;
+}
+.main .contact__form .radio label::before {
+  content: "";
+  border: 2px solid #222;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -8px 20px;
+  margin-left: 0;
+  border-radius: 50%;
+}
+.main .contact__form .radio label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(34, 34, 34, 0);
+  left: 7px;
+  top: 12px;
+  margin: -8px 20px;
+  margin-left: 0;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.main .contact__form .radio input[type="radio"]:checked + label::after {
+  background: #222222;
+}
+.main .contact__form .radioText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #434343;
+}
+.main .contact__form .bottom__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #434343;
+}
+.main .contact__form .textarea__cover {
+  background-color: #FFFFFF;
+  border: 1px solid #C2C2C2;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+.main .contact__form .textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.main .contact__form .textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+.main .contact__form ::-webkit-scrollbar {
+  z-index: 0;
+  width: 8px;
+}
+.main .contact__form ::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+.main .contact__form ::-webkit-scrollbar-thumb {
+  background: #2B901A;
+  border-radius: 10px;
+}
 .main .paragraf {
   font-family: 'Roboto';
   font-style: normal;
