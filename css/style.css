@@ -135,7 +135,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background: #222629;
-  padding: 17px 0 17px;
+  padding: 17px 0 13px;
 }
 
 .header::before {
@@ -162,7 +162,7 @@ h6 {
   line-height: 23px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-left: 42px;
+  padding-left: 36px;
 }
 
 .nameCompany__span {
@@ -181,14 +181,15 @@ h6 {
   position: relative;
   z-index: 5;
   width: 128px;
+  margin-top: 5px;
   height: 31px;
 }
 
 .icon-lamp::before {
   position: absolute;
-  top: -5px;
-  left: 0;
-  font-size: 32px;
+  top: -4px;
+  left: -4px;
+  font-size: 30px;
 }
 
 .header__burger {
@@ -226,7 +227,7 @@ h6 {
 
 .header__right {
   display: flex;
-  margin: 0 2px 0 0;
+  margin: -2px 2px 0 0;
 }
 
 .icon-search::before {
@@ -235,11 +236,11 @@ h6 {
   width: 18px;
   padding: 0;
   padding-left: 20px;
-  margin-left: 17px;
+  margin-left: 20px;
 }
 
 .space {
-  margin-left: 37px;
+  margin-left: 36px;
 }
 
 @media (max-width: 768px) {
@@ -405,12 +406,13 @@ h6 {
 }
 .main .main__top .main__topImg {
   width: 100%;
+  margin-top: 1px;
 }
 .main .main__top .main__topText {
   position: absolute;
   width: max-content;
   max-width: 1110px;
-  bottom: 42px;
+  bottom: 63px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -440,7 +442,7 @@ h6 {
   color: #2B901A;
 }
 .main .main__block1 {
-  margin: 113px 0 116px;
+  margin: 116px 0 102px;
 }
 .main .main__block1 .container {
   width: 1110px;
@@ -455,6 +457,7 @@ h6 {
   /* identical to box height */
   margin-bottom: 21px;
   text-transform: uppercase;
+  margin-left: -1px;
   color: #434343;
 }
 .main .main__block1 .icon-pointsArrow::before {
@@ -463,9 +466,11 @@ h6 {
 }
 .main .main__block1 .block1__content {
   display: flex;
+  margin: 0px 0px 0 -18px;
 }
 .main .main__block1 .block1__content-img {
   height: 249px;
+  width: 398px;
 }
 .main .main__block1 .block1__content-imgImg {
   height: 100%;
@@ -491,7 +496,7 @@ h6 {
 }
 .main .main__block2 .container {
   margin: 0 auto;
-  padding: 36px 0 52px;
+  padding: 36px 0 1px;
 }
 .main .main__block2 .block2__title {
   font-family: 'Roboto';
@@ -515,9 +520,10 @@ h6 {
   line-height: 28px;
   /* or 175% */
   color: #434343;
+  margin: 0 0 0 5px;
 }
 .main .main__block2 .block2__subTitle2 {
-  margin: 16px 0 39px 0;
+  margin: 15px 0 37px 0;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -533,15 +539,16 @@ h6 {
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   color: #434343;
 }
 .main .main__block2 .block2__dropdowns {
   display: flex;
   justify-content: space-between;
+  margin: 0 0 0 1px;
 }
 .main .main__block2 .btn__go {
-  padding: 13px;
+  padding: 13px 0 11px;
   display: inline-block;
   background: #2B901A;
   border-radius: 10px;
@@ -549,15 +556,21 @@ h6 {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  color: #FFFFFF;
   width: 220px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 53px auto 52px;
+  margin: 56px auto 51px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  text-align: center;
+  color: #FFFFFF;
 }
 .main .main__block2 .block2__dropdown .dropdown {
-  width: 217px;
+  width: 254px;
 }
 .main .main__block3 {
   padding: 110px 0 116px;
@@ -573,32 +586,46 @@ h6 {
   line-height: 38px;
   text-transform: uppercase;
   color: #434343;
+  margin: 0 0 0 1px;
 }
 .main .main__block3 .icon-pointsArrow::before {
   color: #2B901A;
+  font-size: 24px;
 }
 .main .main__block3 .block3__make {
   display: flex;
-  justify-content: space-between;
+  margin: 21px 0 35px;
+}
+.main .main__block3 .show__more-btn {
+  margin: -1px 1px 0 0;
 }
 .main .main__block3 .block3__colon {
   display: flex;
-  width: 42%;
+  width: 40%;
   justify-content: space-between;
-  margin: 30px 0 30px;
 }
-.main .main__block3 .listItem {
-  margin-bottom: 15px;
+.main .main__block3 .block3__colon:nth-child(even) {
+  margin-left: 126px;
 }
 .main .main__block3 .listItem-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  /* or 222% */
   color: #2B901A;
 }
 .main .main__block3 .listItem-link:hover {
   color: #434343;
 }
+.main .main__block3 .show__more {
+  margin: 0 0 0 0;
+}
 .main .main__block4 {
   background: #EBEBEB;
-  padding: 63px 0 65px;
+  margin: -4px 0 0 0;
+  padding: 66px 0 66px;
 }
 .main .main__block4 .container {
   margin: 0 auto;
@@ -614,6 +641,7 @@ h6 {
   font-size: 32px;
   line-height: 38px;
   text-transform: uppercase;
+  margin: 2px 0 0 12px;
   color: #434343;
 }
 .main .main__block4 .icon-pointsArrow::before {
@@ -624,6 +652,7 @@ h6 {
   height: 42px;
 }
 .main .main__block4 .dropdown {
+  margin-top: -3px;
   margin-right: 95px;
   width: 445px;
 }
@@ -645,6 +674,16 @@ h6 {
 .main .main__block5 .container {
   width: 1110px;
   margin: 0 auto;
+}
+.main .main__block5 .text {
+  margin: 0 0 0 1px;
+}
+.main .main__block5 .show__more {
+  margin: 16px 0 0 0;
+}
+.main .main__block5 .show__more .icon-pointsArrow::before {
+  margin: 0 2px 0 0;
+  font-size: 12px;
 }
 .main .year__block1 {
   font-family: 'Roboto';
@@ -2123,12 +2162,13 @@ h6 {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin: 5px 0 0 0;
 }
 .main .show__more .icon-pointsArrow::before {
   font-size: 14px;
 }
 .main .gorizont__line {
-  border: 1px solid #B5B5B5;
+  border-bottom: 1px solid #B5B5B5;
   transform: rotate(180deg);
   width: 89%;
 }
@@ -2139,6 +2179,7 @@ h6 {
   font-size: 18px;
   line-height: 28px;
   color: #2B901A;
+  margin: 0 -4px 0 0;
 }
 .main .info__listItem {
   font-family: 'Roboto';
@@ -2187,18 +2228,21 @@ h6 {
   width: 100%;
   text-align: left;
   background: #FFFFFF;
-  padding: 13px 10px 12px;
+  padding: 13px 10px 12px 16px;
   border: 1px solid #DFDFDF;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
   cursor: pointer;
   border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
   -o-border-radius: 10px 10px 10px 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #434343;
+  height: 45px;
 }
 .main .dropdown__arrow {
   position: absolute;

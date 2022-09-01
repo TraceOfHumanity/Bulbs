@@ -140,7 +140,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background: #222629;
-  padding: 17px 0 17px;
+  padding: 17px 0 13px;
 }
 
 .header::before {
@@ -167,7 +167,7 @@ h6 {
   line-height: 23px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-left: 42px;
+  padding-left: 36px;
 }
 
 .nameCompany__span {
@@ -186,14 +186,15 @@ h6 {
   position: relative;
   z-index: 5;
   width: 128px;
+  margin-top: 5px;
   height: 31px;
 }
 
 .icon-lamp::before {
   position: absolute;
-  top: -5px;
-  left: 0;
-  font-size: 32px;
+  top: -4px;
+  left: -4px;
+  font-size: 30px;
 }
 
 .header__burger {
@@ -242,7 +243,7 @@ h6 {
 // }
 .header__right {
   display: flex;
-  margin: 0 2px 0 0;
+  margin: -2px 2px 0 0;
 }
 
 .icon-search::before {
@@ -251,11 +252,11 @@ h6 {
   width: 18px;
   padding: 0;
   padding-left: 20px;
-  margin-left: 17px;
+  margin-left: 20px;
 }
 
 .space {
-  margin-left: 37px;
+  margin-left: 36px;
 }
 
 @media (max-width: 768px) {
@@ -424,13 +425,14 @@ h6 {
 
     .main__topImg {
       width: 100%;
+      margin-top: 1px;
     }
 
     .main__topText {
       position: absolute;
       width: max-content;
       max-width: 1110px;
-      bottom: 42px;
+      bottom: 63px;
       left: 50%;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
@@ -466,7 +468,7 @@ h6 {
   }
 
   .main__block1 {
-    margin: 113px 0 116px;
+    margin: 116px 0 102px;
 
     .container {
       width: 1110px;
@@ -482,7 +484,7 @@ h6 {
       /* identical to box height */
       margin-bottom: 21px;
       text-transform: uppercase;
-
+      margin-left: -1px;
       color: #434343;
     }
 
@@ -493,10 +495,13 @@ h6 {
 
     .block1__content {
       display: flex;
+      margin: 0px 0px 0 -18px;
     }
 
     .block1__content-img {
       height: 249px;
+      width: 398px;
+
     }
 
     .block1__content-imgImg {
@@ -530,7 +535,7 @@ h6 {
 
     .container {
       margin: 0 auto;
-      padding: 36px 0 52px;
+      padding: 36px 0 1px;
     }
 
     .block2__title {
@@ -563,11 +568,12 @@ h6 {
 
 
       color: #434343;
+      margin: 0 0 0 5px;
 
     }
 
     .block2__subTitle2 {
-      margin: 16px 0 39px 0;
+      margin: 15px 0 37px 0;
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
@@ -586,7 +592,7 @@ h6 {
       font-size: 18px;
       line-height: 28px;
       /* or 156% */
-      margin-bottom: 3px;
+      margin-bottom: 4px;
 
 
       color: #434343;
@@ -595,10 +601,11 @@ h6 {
     .block2__dropdowns {
       display: flex;
       justify-content: space-between;
+      margin: 0 0 0 1px;
     }
 
     .btn__go {
-      padding: 13px;
+      padding: 13px 0 11px;
       display: inline-block;
       background: #2B901A;
       border-radius: 10px;
@@ -606,12 +613,21 @@ h6 {
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
-      color: #FFFFFF;
       width: 220px;
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: center;
-      margin: 53px auto 52px;
+      margin: 56px auto 51px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+
+      text-align: center;
+
+      color: #FFFFFF;
     }
 
     .block2__dropdown {
@@ -619,7 +635,7 @@ h6 {
       // }
 
       .dropdown {
-        width: 217px;
+        width: 254px;
       }
 
 
@@ -674,43 +690,68 @@ h6 {
       text-transform: uppercase;
 
       color: #434343;
+      margin: 0 0 0 1px;
     }
 
     .icon-pointsArrow::before {
       color: #2B901A;
+      font-size: 24px;
     }
 
     .block3__make {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
+      margin: 21px 0 35px;
+
+    }
+
+    .show__more-btn {
+      margin: -1px 1px 0 0;
     }
 
     .block3__colon {
       display: flex;
-      width: 42%;
+      width: 40%;
       justify-content: space-between;
-      margin: 30px 0 30px;
+    }
+
+    .block3__colon:nth-child(even) {
+      margin-left: 126px;
     }
 
     .colon__list {}
 
     .listItem {
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
     }
 
     .listItem-link {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 40px;
+      /* or 222% */
+
+
       color: #2B901A;
+
     }
 
     .listItem-link:hover {
       color: #434343;
     }
 
+    .show__more {
+      margin: 0 0 0 0;
+    }
+
   }
 
   .main__block4 {
     background: #EBEBEB;
-    padding: 63px 0 65px;
+    margin: -4px 0 0 0;
+    padding: 66px 0 66px;
 
     .container {
       margin: 0 auto;
@@ -729,7 +770,7 @@ h6 {
       font-size: 32px;
       line-height: 38px;
       text-transform: uppercase;
-
+      margin: 2px 0 0 12px;
       color: #434343;
     }
 
@@ -745,10 +786,9 @@ h6 {
     }
 
     .dropdown {
+      margin-top: -3px;
       margin-right: 95px;
       width: 445px;
-
-
     }
 
 
@@ -793,9 +833,20 @@ h6 {
       margin: 0 auto;
     }
 
-    .text {}
+    .text {
+      margin: 0 0 0 1px;
+    }
 
     .more__text {}
+
+    .show__more {
+      margin: 16px 0 0 0;
+
+      .icon-pointsArrow::before {
+        margin: 0 2px 0 0;
+        font-size: 12px;
+      }
+    }
 
 
   }
@@ -2640,9 +2691,11 @@ h6 {
     .midle__radios {
       display: flex;
       justify-content: space-between;
-      .radio__group{
+
+      .radio__group {
         width: 400px;
       }
+
       .custom-radio-btn {
         --size: 16px;
         min-width: var(--size);
@@ -2653,42 +2706,42 @@ h6 {
         align-items: center;
         cursor: pointer;
         /* changes from the video   */
-        
+
         // margin: 0 10px;
         margin: 0 0 10px 0;
         position: relative;
         padding-left: var(--size);
       }
-      
+
       .custom-radio-btn input {
         display: none;
       }
-      
+
       /* handle if you want label on the left of the checkmark instead */
-      
+
       // .custom-radio-btn.left {
       //   padding-left: 0;
       //   padding-right: var(--size);
       // }
-      
+
       /* label  */
-      
+
       .custom-radio-btn .label {
         margin-left: 5px;
       }
-      
+
       // .custom-radio-btn.left .label {
       //   margin: 0 5px;
       // }
-      
+
       .custom-radio-btn[aria-label]::after {
         content: attr(aria-label);
         display: inline-block;
         margin-left: 5px;
       }
-      
+
       /* checkmark */
-      
+
       .custom-radio-btn .checkmark {
         --gap: 3px;
         --border: 1px;
@@ -2699,36 +2752,35 @@ h6 {
         display: inline-block;
         transition: opacity 0.3s ease;
         /* changes from the video  */
-        
+
         border: var(--border) solid #C2C2C2;
         padding: var(--gap);
         position: absolute;
         top: 0;
         left: 0;
       }
-      
+
       .custom-radio-btn.left .checkmark {
         left: auto;
         right: 0;
       }
-      
-      .custom-radio-btn input:checked ~ .checkmark {
+
+      .custom-radio-btn input:checked~.checkmark {
         /* changes from the video  */
-      
+
         /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
         background-origin: content-box;
         background-repeat: no-repeat;
-        background-image: radial-gradient(
-          circle at center, 
-          var(--check-color) 
-           /* the size of the check mark is determined by subtracting from the size of the circle
+        background-image: radial-gradient(circle at center,
+            var(--check-color)
+            /* the size of the check mark is determined by subtracting from the size of the circle
            the border(both sides) and the gap(both sides) than dividing it by 2 to get the radius of the circle        */
-             calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), 
-          rgba(255, 255, 255, 0) 0);
+            calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2),
+            rgba(255, 255, 255, 0) 0);
       }
     }
 
-    
+
 
     .form__bottom {
       width: 100%;
@@ -2784,18 +2836,21 @@ h6 {
       background-color: white;
       border-color: #333333;
     }
-    .formBtn{
+
+    .formBtn {
       display: flex;
       justify-content: flex-end;
       margin-top: 46px;
     }
+
     .sendBtn {
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 28px;
-      /*or156%*/width: 184px;
+      /*or156%*/
+      width: 184px;
       background-color: #2B901A;
       padding: 13px 12px;
       text-align: center;
@@ -2806,7 +2861,7 @@ h6 {
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
-}
+    }
 
     ::-webkit-scrollbar {
       z-index: 0;
@@ -2854,6 +2909,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    margin: 5px 0 0 0;
 
     .icon-pointsArrow::before {
       font-size: 14px;
@@ -2861,7 +2917,7 @@ h6 {
   }
 
   .gorizont__line {
-    border: 1px solid #B5B5B5;
+    border-bottom: 1px solid #B5B5B5;
     transform: rotate(180deg);
     width: 89%;
   }
@@ -2873,6 +2929,7 @@ h6 {
     font-size: 18px;
     line-height: 28px;
     color: #2B901A;
+    margin: 0 -4px 0 0;
   }
 
   // =====================================================
@@ -2934,19 +2991,21 @@ h6 {
     width: 100%;
     text-align: left;
     background: #FFFFFF;
-    padding: 13px 10px 12px;
+    padding: 13px 10px 12px 16px;
     border: 1px solid #DFDFDF;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -ms-border-radius: 10px 10px 10px 10px;
     -o-border-radius: 10px 10px 10px 10px;
-
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #434343;
+    height: 45px;
   }
 
 
