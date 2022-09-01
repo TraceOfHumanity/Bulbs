@@ -211,12 +211,13 @@ h6 {
 .header__link {
   position: relative;
   z-index: 5;
-  
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  margin-top: 2px;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
