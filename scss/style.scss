@@ -140,7 +140,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background: #222629;
-  padding: 19px 0;
+  padding: 17px 0 17px;
 }
 
 .header::before {
@@ -211,6 +211,7 @@ h6 {
 .header__link {
   position: relative;
   z-index: 5;
+  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -240,6 +241,7 @@ h6 {
 // }
 .header__right {
   display: flex;
+  margin: 0 2px 0 0;
 }
 
 .icon-search::before {
@@ -412,12 +414,11 @@ h6 {
 // /header style =========================================================================
 // main style ===================================================================
 .main {
-  padding-top: 69px;
+  padding-top: 64px;
 
   .main__top {
     position: relative;
-    width: calc(768px + (1440 - 768) * ((100vw - 768px) / (1440 - 768)));
-    max-width: 1110px;
+    max-width: 1440px;
     margin: 0 auto;
 
     .main__topImg {
@@ -2635,69 +2636,103 @@ h6 {
       color: #434343;
     }
 
-    .midle__radios {}
-
-    .radio {
-      input[type="radio"] {
-        opacity: 0;
+    .midle__radios {
+      display: flex;
+      justify-content: space-between;
+      .radio__group{
+        width: 400px;
       }
-
-      label {
-        position: relative;
+      .custom-radio-btn {
+        --size: 16px;
+        min-width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
         cursor: pointer;
-        font-weight: bold;
-        padding-right: 32px;
+        /* changes from the video   */
+        
+        // margin: 0 10px;
+        margin: 0 0 10px 0;
+        position: relative;
+        padding-left: var(--size);
       }
-
-      label:nth-last-child(1) {
-        padding-right: 0;
+      
+      .custom-radio-btn input {
+        display: none;
       }
-
-      label::before {
-        content: "";
-        border: 2px solid #222;
+      
+      /* handle if you want label on the left of the checkmark instead */
+      
+      // .custom-radio-btn.left {
+      //   padding-left: 0;
+      //   padding-right: var(--size);
+      // }
+      
+      /* label  */
+      
+      .custom-radio-btn .label {
+        margin-left: 5px;
+      }
+      
+      // .custom-radio-btn.left .label {
+      //   margin: 0 5px;
+      // }
+      
+      .custom-radio-btn[aria-label]::after {
+        content: attr(aria-label);
         display: inline-block;
-        width: 30px;
-        height: 30px;
-        margin: -8px 20px;
-        margin-left: 0;
+        margin-left: 5px;
+      }
+      
+      /* checkmark */
+      
+      .custom-radio-btn .checkmark {
+        --gap: 3px;
+        --border: 1px;
+        --check-color: #2B911A;
+        width: var(--size);
+        height: var(--size);
         border-radius: 50%;
-      }
-
-      label::after {
-        content: "";
         display: inline-block;
+        transition: opacity 0.3s ease;
+        /* changes from the video  */
+        
+        border: var(--border) solid #C2C2C2;
+        padding: var(--gap);
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background: rgba(34, 34, 34, 0);
-        left: 7px;
-        top: 12px;
-        margin: -8px 20px;
-        margin-left: 0;
-        border-radius: 50%;
-
-        transition: all 0.4s;
+        top: 0;
+        left: 0;
       }
-
-      input[type="radio"]:checked+label::after {
-        background: rgba(34, 34, 34, 1);
+      
+      .custom-radio-btn.left .checkmark {
+        left: auto;
+        right: 0;
+      }
+      
+      .custom-radio-btn input:checked ~ .checkmark {
+        /* changes from the video  */
+      
+        /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        background-image: radial-gradient(
+          circle at center, 
+          var(--check-color) 
+           /* the size of the check mark is determined by subtracting from the size of the circle
+           the border(both sides) and the gap(both sides) than dividing it by 2 to get the radius of the circle        */
+             calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), 
+          rgba(255, 255, 255, 0) 0);
       }
     }
 
-    .radioText {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      /* or 156% */
+    
 
-
-      color: #434343;
+    .form__bottom {
+      width: 100%;
+      justify-content: end;
     }
-
-    .form__bottom {}
 
     .bottom__title {
       font-family: 'Roboto';
@@ -2706,8 +2741,6 @@ h6 {
       font-size: 18px;
       line-height: 28px;
       /* or 156% */
-
-
       color: #434343;
     }
 
@@ -2750,8 +2783,29 @@ h6 {
       background-color: white;
       border-color: #333333;
     }
-
-    .sendBtn {}
+    .formBtn{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 46px;
+    }
+    .sendBtn {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      /*or156%*/width: 184px;
+      background-color: #2B901A;
+      padding: 13px 12px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
 
     ::-webkit-scrollbar {
       z-index: 0;
