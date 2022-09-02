@@ -1994,11 +1994,9 @@ h6 {
 .main .product__block1 .info__list {
   margin-bottom: 20px;
 }
-.main .product__block1 .form__group {
-  height: 42px;
-}
 .main .product__block1 .dropdown {
-  width: 180px;
+  width: 184px;
+  margin: -6px 0 0 0;
   position: relative;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -2006,20 +2004,23 @@ h6 {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
+.main .product__block1 .one {
+  margin: 0 auto;
+}
 .main .product__block1 .dropdown__button {
   white-space: nowrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  height: 52px;
   text-align: left;
   background: #2B901A;
-  padding: 13px 10px 12px;
+  padding: 13px 7px 13px 8px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  white-space: nowrap;
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
@@ -2035,6 +2036,8 @@ h6 {
   position: relative;
   right: 6px;
   top: 0px;
+  margin: 0 -7px 0 34px;
+  width: 15px;
 }
 .main .product__block1 .dropdown__list {
   height: 137px;
@@ -2105,11 +2108,18 @@ h6 {
   font-size: 32px;
   line-height: 38px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: #434343;
 }
+.main .contact__block1 .icon-pointsArrow::before {
+  color: #2B901A;
+  font-size: 24px;
+}
+.main .contact__block1 .paragraf {
+  padding: 0 0 0 1px;
+}
 .main .contact__form {
-  margin-top: 20px;
+  margin: 27px 0 57px 0;
   background: url(../img/image\ 21.jpg);
   background-size: cover;
   padding: 36px 0 38px;
@@ -2129,7 +2139,7 @@ h6 {
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   color: #434343;
 }
 .main .contact__form .input {
@@ -2137,7 +2147,7 @@ h6 {
   height: 44px;
   background: #FFFFFF;
   border: 1px solid #DFDFDF;
-  padding: 13px 10px;
+  padding: 17px 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2149,7 +2159,8 @@ h6 {
   box-shadow: 0px 0px 10px 1px #ababab;
 }
 .main .contact__form .inputIn {
-  width: 300px;
+  width: 330px;
+  height: 52px;
   background: none;
   font-family: 'Roboto';
   font-style: normal;
@@ -2159,14 +2170,17 @@ h6 {
   margin-bottom: 20px;
   color: #000000;
 }
+.main .contact__form .form__midle {
+  margin: 6px 0 21px 0;
+}
 .main .contact__form .midle__title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: #434343;
+  margin: 0px 0 17px 0;
 }
 .main .contact__form .midle__radios {
   display: flex;
@@ -2176,7 +2190,8 @@ h6 {
   /* checkmark */
 }
 .main .contact__form .midle__radios .radio__group {
-  width: 400px;
+  width: 265px;
+  margin: 0 -10px 0 0px;
 }
 .main .contact__form .midle__radios .custom-radio-btn {
   --size: 16px;
@@ -2186,16 +2201,23 @@ h6 {
   display: flex;
   align-items: center;
   cursor: pointer;
-  /* changes from the video   */
   margin: 0 0 10px 0;
   position: relative;
   padding-left: var(--size);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #434343;
 }
 .main .contact__form .midle__radios .custom-radio-btn input {
   display: none;
 }
 .main .contact__form .midle__radios .custom-radio-btn .label {
-  margin-left: 5px;
+  margin-left: 8px;
+  margin-top: 1px;
 }
 .main .contact__form .midle__radios .custom-radio-btn[aria-label]::after {
   content: attr(aria-label);
@@ -2245,37 +2267,34 @@ h6 {
 .main .contact__form .textarea__cover {
   background-color: #FFFFFF;
   border: 1px solid #C2C2C2;
-  padding: 10px;
+  padding: 10px 3px 10px 10px;
   width: 100%;
-  height: 100px;
+  margin: 1px 0 0 0;
+  height: 147px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  cursor: pointer;
+  cursor: text;
 }
 .main .contact__form .textarea {
   width: 100%;
   height: 100%;
   resize: none;
   outline: none;
-  color: #666666;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
-}
-.main .contact__form .textarea:focus {
-  cursor: text;
-  color: #333333;
-  background-color: white;
-  border-color: #333333;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  color: #000000;
 }
 .main .contact__form .formBtn {
   display: flex;
   justify-content: flex-end;
-  margin-top: 46px;
+  margin-top: 45px;
 }
 .main .contact__form .sendBtn {
   font-family: 'Roboto';
@@ -2286,7 +2305,7 @@ h6 {
   /*or156%*/
   width: 184px;
   background-color: #2B901A;
-  padding: 13px 12px;
+  padding: 13px 12px 11px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
