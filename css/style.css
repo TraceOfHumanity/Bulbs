@@ -1049,7 +1049,7 @@ h6 {
   width: 100%;
 }
 .main .year__block4 {
-  margin-bottom: 94px;
+  margin-bottom: 107px;
 }
 .main .year__block4 .block4__title {
   font-family: 'Roboto';
@@ -1058,7 +1058,7 @@ h6 {
   font-size: 28px;
   line-height: 33px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   color: #434343;
 }
 .main .year__block4 .block4__paragraf {
@@ -1068,19 +1068,25 @@ h6 {
   font-size: 18px;
   line-height: 28px;
   color: #434343;
-  margin: 0 0 14px 3px;
+  margin: 0 1px 27px 3px;
 }
 .main .year__block4 .info__list,
 .main .year__block4 .olInfo__list {
-  margin-left: 30px;
+  margin-top: -9px;
+  margin-left: 58px;
+  margin-bottom: 17px;
+}
+.main .year__block4 .olInfo__list {
+  margin-top: -12px;
+  margin-left: 59px;
+  margin-bottom: 13px;
 }
 .main .year__block4 .info__listItem {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
+  line-height: 36px;
   color: #434343;
 }
 .main .year__block4 .paregraf__link {
@@ -1099,6 +1105,25 @@ h6 {
   color: #2B901A;
   font-weight: 600;
 }
+.main .year__block4 .icon-circles {
+  position: relative;
+}
+.main .year__block4 .icon-circles::before {
+  color: #2B901A;
+  font-size: 14px;
+  margin-right: 2px;
+}
+.main .year__block4 .centrPoint {
+  width: 4px;
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  transform: translate(102%, 222%);
+  -webkit-transform: translate(102%, 222%);
+  -moz-transform: translate(102%, 222%);
+  -ms-transform: translate(102%, 222%);
+  -o-transform: translate(102%, 222%);
+}
 .main .year__block5 {
   margin-bottom: 100px;
 }
@@ -1109,7 +1134,8 @@ h6 {
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-left: 2px;
+  margin-bottom: 41px;
   color: #434343;
 }
 .main .year__block5 .icon-pointsArrow::before {
@@ -1120,6 +1146,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 36px;
+  margin: 0 0 0 1px;
 }
 .main .year__block5 .yearsBtn__btn {
   cursor: pointer;
