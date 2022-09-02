@@ -695,6 +695,7 @@ h6 {
   font-size: 32px;
   line-height: 38px;
   text-transform: uppercase;
+  margin: 0 0px 0 -3px;
 }
 .main .year__block1 .icon-pointsArrow::before {
   color: #2B901A;
@@ -704,13 +705,13 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  margin: 20px 0 20px;
+  margin: 12px 0 28px;
 }
 .main .year__block2 {
   font-family: 'Roboto';
   font-style: normal;
   color: #434343;
-  padding: 39px 0 46px;
+  padding: 39px 0 44px;
   background: url(../img/image\ 21.jpg);
   width: 100%;
   background-size: cover;
@@ -733,8 +734,10 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  margin: 2px 0 0 0;
 }
 .main .year__block2 .block2__right {
+  padding: 6px 200px 0 15px;
   width: 50%;
 }
 .main .year__block2 .view {
@@ -749,9 +752,9 @@ h6 {
   display: flex;
   align-items: center;
   background-image: linear-gradient(to right, #434343 75%, transparent 75%);
-  background-position: 0 35px;
+  background-position: 1px 35px;
   background-repeat: repeat-x;
-  background-size: 6px 3px;
+  background-size: 7px 2px;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -763,10 +766,10 @@ h6 {
   background-image: linear-gradient(to right, #2B901A 75%, transparent 75%);
 }
 .main .year__block3 {
-  margin-top: 43px;
+  margin-top: 53px;
 }
 .main .year__block3 .product {
-  margin-bottom: 86px;
+  margin-bottom: 93px;
 }
 .main .year__block3 .product__title {
   font-family: 'Roboto';
@@ -784,7 +787,8 @@ h6 {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #C9C9C9;
-  padding-bottom: 55px;
+  padding-bottom: 54px;
+  padding-left: 2px;
 }
 .main .year__block3 .title {
   font-family: 'Roboto';
@@ -796,14 +800,15 @@ h6 {
   color: #434343;
 }
 .main .year__block3 .product__topBtn {
-  width: max-content;
+  width: 184px;
   height: max-content;
   cursor: pointer;
   background-color: #2B901A;
   display: flex;
   align-items: center;
   border-radius: 10px;
-  padding: 13px 17px 12px 16px;
+  padding: 13px 17px 11px 16px;
+  margin: -10px 101px 0 0;
 }
 .main .year__block3 .check {
   font-family: 'Roboto';
@@ -817,7 +822,7 @@ h6 {
   color: #FFFFFF;
 }
 .main .year__block3 .arrow {
-  margin-left: 20px;
+  margin-left: 28px;
   width: 14px;
   height: 7px;
 }
@@ -828,10 +833,13 @@ h6 {
   display: flex;
   gap: 25px;
 }
+.main .year__block3 .info__list {
+  margin: 7px 0 0 0;
+}
 .main .year__block3 .type__btn {
   cursor: pointer;
   width: 184px;
-  padding: 13px 0 12px;
+  padding: 13px 0 11px;
   background: #C9C9C9;
   border-radius: 10px;
   font-family: 'Roboto';
@@ -848,8 +856,8 @@ h6 {
   background: #2B911A;
 }
 .main .year__block3 .lamp {
-  margin: 0px 0 48px 0;
-  padding-top: 51px;
+  margin: 0px 0 31px 0;
+  padding-top: 56px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -860,18 +868,19 @@ h6 {
 .main .year__block3 .lamp__img {
   min-width: 119px;
   margin-right: 28px;
+  margin-left: 5px;
 }
 .main .year__block3 .lamp__imgImg {
   width: 100%;
 }
 .main .year__block3 .status {
-  margin-top: 42px;
+  margin-top: 45px;
+  margin-left: 28px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -892,15 +901,25 @@ h6 {
   font-weight: 500;
   font-size: 22px;
   line-height: 28px;
-  /* or 127% */
-  margin-bottom: 63px;
+  margin-bottom: 59px;
   color: #434343;
+}
+.main .year__block3 .show__more {
+  margin: -9px 0 0 0;
+}
+.main .year__block3 .gorizont__line {
+  width: 970px;
+}
+.main .year__block3 .show__more-btn {
+  margin: 0px 3px 0 0px;
+  text-transform: uppercase;
 }
 .main .year__block3 .form__group {
   height: 42px;
 }
 .main .year__block3 .dropdown {
-  width: 180px;
+  width: 184px;
+  margin: -6px 0 0 0;
   position: relative;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -908,20 +927,23 @@ h6 {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
+.main .year__block3 .one {
+  margin: 0 auto;
+}
 .main .year__block3 .dropdown__button {
   white-space: nowrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  height: 52px;
   text-align: left;
   background: #2B901A;
-  padding: 13px 10px 12px;
+  padding: 13px 7px 13px 8px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  white-space: nowrap;
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
@@ -937,6 +959,8 @@ h6 {
   position: relative;
   right: 6px;
   top: 0px;
+  margin: 0 -7px 0 34px;
+  width: 15px;
 }
 .main .year__block3 .dropdown__list {
   height: 137px;
@@ -999,7 +1023,7 @@ h6 {
 }
 .main .year__block3 .showMore__productBtn {
   cursor: pointer;
-  margin: 0 auto 80px;
+  margin: -27px auto 79px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -1014,12 +1038,15 @@ h6 {
   color: #FFFFFF;
   padding: 13px 0 12px;
   background-color: #2B901A;
-  width: 184px;
+  width: 183px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+.main .year__block3 .gorizont__line100 {
+  width: 100%;
 }
 .main .year__block4 {
   margin-bottom: 94px;
@@ -1031,7 +1058,7 @@ h6 {
   font-size: 28px;
   line-height: 33px;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   color: #434343;
 }
 .main .year__block4 .block4__paragraf {
@@ -1040,8 +1067,8 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: #434343;
+  margin: 0 0 14px 3px;
 }
 .main .year__block4 .info__list,
 .main .year__block4 .olInfo__list {
@@ -2194,12 +2221,14 @@ h6 {
 }
 .main .icon-circles::before {
   color: #2B901A;
+  font-size: 14px;
+  margin-right: 2px;
 }
 .main .centrPoint {
-  width: 6px;
+  width: 4px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: 1px;
   transform: translate(102%, 222%);
   -webkit-transform: translate(102%, 222%);
   -moz-transform: translate(102%, 222%);
@@ -2310,12 +2339,12 @@ h6 {
 }
 .main .crumbs {
   width: calc(1110px + (1110 - 1110) * ((100vw - 320px) / (1920 - 320)));
-  margin: 20px auto 35px;
+  margin: 22px auto 25px;
 }
 .main .crumbs .container {
-  margin-left: 4px;
+  margin-left: -1px;
   display: flex;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 .main .crumbs .container .crumb {
   display: inline-block;
@@ -2342,7 +2371,7 @@ h6 {
 }
 .main .crumbs .container .crumb + .crumb::before {
   content: "|";
-  padding-right: 8px;
+  padding-right: 7px;
   color: #2B901A;
 }
 .main .crumbs .crumb:last-child {
