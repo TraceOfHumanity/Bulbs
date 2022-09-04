@@ -1406,8 +1406,18 @@ h6 {
 .main .product__block1 .parTop {
   margin: 32px 0 13px 0;
 }
+.main .product__block1 .dropdown__button--active {
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+}
 .main .product__block1 .dropdown__list {
   background: #FFFFFF;
+  top: 42px;
+  border: 2px solid #2B901A;
+  border-top: none;
 }
 .main .contact__block1 .title {
   margin-bottom: 12px;

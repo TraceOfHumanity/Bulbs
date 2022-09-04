@@ -663,7 +663,7 @@ h6 {
       // margin-bottom: 15px;
     }
 
-    
+
 
     .listItem-link:hover {
       color: #434343;
@@ -2437,9 +2437,18 @@ h6 {
     .parTop {
       margin: 32px 0 13px 0;
     }
-
+    .dropdown__button--active {
+      border-radius: 10px 10px 0px 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+      -moz-border-radius: 10px 10px 0px 0px;
+      -ms-border-radius: 10px 10px 0px 0px;
+      -o-border-radius: 10px 10px 0px 0px;
+}
     .dropdown__list {
       background: #FFFFFF;
+      top: 42px;
+      border: 2px solid #2B901A;
+      border-top: none;
     }
   }
 
@@ -3374,6 +3383,7 @@ h6 {
   -o-border-radius: 10px;
 
 }
+
 .listItem-link {
   font-family: 'Roboto';
   font-style: normal;
