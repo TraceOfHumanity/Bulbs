@@ -1798,6 +1798,19 @@ li {
   width: 15px;
 }
 
+.dropdown__arrowGreen {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  margin: 0 -7px 0 34px;
+  width: 15px;
+  display: none;
+}
+
+.dropdown__arrow180 {
+  display: block;
+}
+
 .dropdown__list {
   height: 137px;
   display: none;
@@ -1841,7 +1854,7 @@ li {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 36px;
+  line-height: 18px;
   color: #434343;
   padding: 6px 10px 3px 7px;
   border-bottom: 1px solid #C9C9C9;
