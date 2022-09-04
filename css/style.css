@@ -11,6 +11,11 @@
   padding: 0;
   margin: 0;
   border: 0;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 *,
@@ -534,6 +539,9 @@ h6 {
   /* or 156% */
   text-align: center;
   color: #FFFFFF;
+}
+.main .main__block2 .btn__go:hover {
+  background: #3ba02a;
 }
 .main .main__block2 .block2__dropdown {
   width: 254px;
@@ -1622,6 +1630,9 @@ h6 {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.main .contact__form .sendBtn:hover {
+  background: #3ba02a;
+}
 .main .contact__form ::-webkit-scrollbar {
   z-index: 0;
   width: 8px;
@@ -2187,7 +2198,17 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+}
+.footer li a {
   color: #2B901A;
+  transition: 0.2s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+}
+.footer li a:hover {
+  color: #FFFFFF;
 }
 .footer .footer__left-p {
   width: 377px;
