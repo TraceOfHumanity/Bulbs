@@ -953,7 +953,7 @@ h6 {
   width: 100%;
 }
 .main .year__block4 {
-  margin-bottom: 107px;
+  margin-bottom: 57px;
 }
 .main .year__block4 .block4__title {
   font-weight: 600;
@@ -962,16 +962,6 @@ h6 {
 }
 .main .year__block4 .block4__paragraf {
   margin: 0 1px 27px 3px;
-}
-.main .year__block4 .info__list {
-  margin-top: -9px;
-  margin-left: 58px;
-  margin-bottom: 17px;
-}
-.main .year__block4 .olInfo__list {
-  margin-top: -12px;
-  margin-left: 59px;
-  margin-bottom: 13px;
 }
 .main .year__block4 .centrPoint {
   top: -4px;
@@ -996,6 +986,7 @@ h6 {
   -o-transform: translate(102%, 222%);
 }
 .main .year__block5 {
+  margin-top: 107px;
   margin-bottom: 100px;
 }
 .main .year__block5 .title {
@@ -1092,37 +1083,18 @@ h6 {
   margin-bottom: 50px;
 }
 .main .model__block1 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  text-transform: uppercase;
-  margin: 0 0 13px -3px;
-  color: #434343;
+  margin: 0 0 12px -3px;
 }
 .main .model__block1 .icon-pointsArrow::before {
   color: #2B901A;
   font-size: 24px;
 }
 .main .model__block1 .paragref {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  margin: 0 0 27px 0;
-  color: #434343;
+  margin: 0 0 28px -1px;
 }
 .main .model__block2 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 33px;
-  color: #434343;
-  margin: 45px 3px 58px;
+  text-transform: none;
+  margin: 44px 3px 60px;
 }
 .main .model__block2 .icon-pointsArrow::before {
   color: #2B901A;
@@ -1141,21 +1113,15 @@ h6 {
   margin-left: 7px;
   margin-bottom: 31px;
 }
+.main .model__block2 .searcYearBtn .moreInfo {
+  margin: 0;
+}
 .main .model__block2 .rightColomn {
   display: flex;
   justify-content: start;
   flex-direction: column;
   margin-left: 30px;
   margin-top: -2px;
-}
-.main .model__block2 .moreInfo {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  color: #434343;
 }
 .main .model__block2 .moreInfoThem {
   font-family: 'Roboto';
@@ -1185,17 +1151,7 @@ h6 {
   color: #FFFFFF;
 }
 .main .model__block3 {
-  margin: 51px 0px 32px 23px;
-}
-.main .model__block3 .paregraf {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  margin: 0 0 28px 0;
-  color: #434343;
+  margin: 52px 0px 32px 22px;
 }
 .main .type__block1 {
   font-family: 'Roboto';
@@ -1217,27 +1173,11 @@ h6 {
 .main .type__block3 .product {
   margin-bottom: 59px;
 }
-.main .type__block3 .product__title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
+.main .type__block3 h3 {
+  margin-bottom: -11px;
+  text-transform: none;
   font-size: 28px;
-  line-height: 28px;
-  color: #434343;
-  margin: 0 8 0 0px;
-  padding: 0px 0 17px 0;
-}
-.main .type__block3 .icon-pointsArrow::before {
-  margin-right: 7px;
-}
-.main .type__block3 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  /* or 117% */
-  color: #434343;
+  padding: 0px 0 0px 6px;
 }
 .main .type__block3 .product__topBtn {
   width: max-content;
@@ -1339,12 +1279,6 @@ h6 {
   justify-content: center;
   text-align: center;
   color: #222629;
-}
-.main .type__block3 .popular {
-  color: #2B901A;
-}
-.main .type__block3 .uniq {
-  color: #A10202;
 }
 .main .type__block3 .lamp__info {
   width: 100%;
@@ -1503,14 +1437,7 @@ h6 {
   margin-top: 67px;
 }
 .main .about__block1 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  text-transform: uppercase;
   margin: 0 0 12px 0;
-  color: #434343;
 }
 .main .about__block1 .icon-pointsArrow::before {
   font-size: 24px;
@@ -1544,14 +1471,7 @@ h6 {
   margin-bottom: 47px;
 }
 .main .about__block3 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 28px;
-  margin-bottom: 20px;
   margin: 59px 0 17px 2px;
-  color: #434343;
 }
 .main .about__block3 .icon-pointsArrow::before {
   font-size: 24px;
@@ -1563,19 +1483,10 @@ h6 {
   margin: 0 0 41px 4px;
 }
 .main .about__block4 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: #434343;
   margin: 0 0 17px 1px;
 }
-.main .about__block4 .paragraf {
-  margin: 0 0 28px 0;
-}
 .main .about__block5 {
-  margin: 30px 0 34px;
+  margin: 30px 0 35px;
 }
 .main .about__block5 .container {
   display: flex;
@@ -1598,14 +1509,8 @@ h6 {
   margin: 0 0 47px 0;
 }
 .main .about__block8 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   /* or 140% */
   margin: 0 0 17px 8px;
-  color: #434343;
 }
 .main .about__block8 .paragraf {
   margin: 0px 0 28px 2px;
@@ -1614,32 +1519,20 @@ h6 {
   margin: 0 0 30px 0;
 }
 .main .about__block9 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   /* or 140% */
   margin: 0 0 18px 8px;
-  color: #434343;
 }
-.main .about__block9 .paragraf {
+.main .about__block9 p {
   margin: 0 -1px 0 2px;
 }
 .main .about__block10 {
   margin-bottom: 44px;
 }
 .main .about__block10 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   /* or 140% */
   margin: 0 0 17px 8px;
-  color: #434343;
 }
-.main .about__block10 .paragraf {
+.main .about__block10 p {
   margin: 0 0 0 2px;
 }
 .main .about__block11 {
@@ -1648,16 +1541,9 @@ h6 {
   padding: 32px 0 28px;
   margin-bottom: 52px;
 }
-.main .about__block11 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+.main .about__block11 h6 {
   /* or 140% */
-  margin: 0 0 0px 8px;
-  color: #434343;
-  margin-bottom: 20px;
+  margin: 0 0 20px 8px;
 }
 .main .about__block11 .realProjects {
   display: flex;
@@ -1668,53 +1554,35 @@ h6 {
 .main .about__block11 .example {
   width: 255px;
 }
-.main .about__block11 .example__img {
-  min-width: 100%;
-}
-.main .about__block11 .example__info {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
+.main .about__block11 .example h6 {
   /* or 140% */
   margin: 7px 0 0 1px;
-  color: #434343;
+}
+.main .about__block11 .example__img {
+  min-width: 100%;
 }
 .main .about__block12 {
   margin-bottom: 38px;
 }
-.main .about__block12 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+.main .about__block12 h6 {
   /* or 140% */
   margin: 0 0px 17px 8px;
-  color: #434343;
 }
-.main .about__block12 .paragraf {
+.main .about__block12 p {
   margin: 0 0 0px 2px;
 }
 .main .about__block13 {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
-.main .about__block13 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+.main .about__block13 h6 {
   /* or 140% */
-  margin: 0px 0 18px 8px;
-  color: #434343;
+  margin: 0px 0 17px 8px;
 }
-.main .about__block13 .paragraf {
+.main .about__block13 p {
   padding: 0 0 0 2px;
 }
 .main .about__block13 .team {
-  margin: 23px 0px 0 1px;
+  margin: -4px 0px 0 1px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1722,8 +1590,8 @@ h6 {
 .main .about__block13 .team__card {
   width: 349px;
 }
-.main .about__block13 .team__card .paragraf {
-  padding: 0 0 29px 2px;
+.main .about__block13 .team__card p {
+  padding: 0 0 0px 2px;
 }
 .main .about__block13 .card__top {
   display: flex;
@@ -1735,45 +1603,40 @@ h6 {
   min-width: 100%;
 }
 .main .about__block13 .person__info {
+  position: relative;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main .about__block13 .person__info-name {
-  font-family: 'Roboto';
-  font-style: normal;
+.main .about__block13 .person__info h6 {
+  margin: 0 0 0 0;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
   /* or 140% */
-  color: #434343;
 }
 .main .about__block13 .person__links {
+  position: absolute;
   display: flex;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  bottom: 19px;
   gap: 5px;
   padding: 5px 0 0 0;
+}
+.main .about__block13 .person__links a {
+  bottom: 0;
 }
 .main .about__block13 .card__text {
   margin: 16px 0 0 -1px;
 }
 .main .about__block14 {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 }
-.main .about__block14 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 20px;
+.main .about__block14 h6 {
   margin: 0 0 28px 8px;
-  color: #434343;
 }
-.main .about__block14 .paragraf {
-  padding: 0 6px 28px 2px;
+.main .about__block14 p {
+  padding: 0 6px 0px 2px;
 }
 .main .product__block1 h1 {
   text-transform: none;
@@ -1808,18 +1671,7 @@ h6 {
   margin-top: 20px;
 }
 .main .contact__block1 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  text-transform: uppercase;
   margin-bottom: 12px;
-  color: #434343;
-}
-.main .contact__block1 .icon-pointsArrow::before {
-  color: #2B901A;
-  font-size: 24px;
 }
 .main .contact__block1 .paragraf {
   padding: 0 0 0 1px;
@@ -1828,7 +1680,7 @@ h6 {
   margin: 27px 0 57px 0;
   background: url(../img/image\ 21.jpg);
   background-size: cover;
-  padding: 36px 0 38px;
+  padding: 35px 0 38px;
 }
 .main .contact__form .form__top {
   display: flex;
@@ -1877,7 +1729,7 @@ h6 {
   color: #000000;
 }
 .main .contact__form .form__midle {
-  margin: 6px 0 21px 0;
+  margin: 6px 0 20px 0;
 }
 .main .contact__form .midle__title {
   font-family: 'Roboto';
@@ -2242,6 +2094,10 @@ li {
   display: none;
 }
 
+.popular {
+  color: #2B901A;
+}
+
 .uniq {
   color: #A10202;
 }
@@ -2427,10 +2283,16 @@ h3 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 28px;
   text-transform: none;
   color: #434343;
+}
+
+h3.icon-pointsArrow::before {
+  font-size: 24px;
+  padding: 0 8px 0 0;
+  margin-left: -7px;
 }
 
 h4 {
@@ -2473,6 +2335,18 @@ h6 {
   border-bottom: 1px solid #C9C9C9;
   padding-bottom: 54px;
   padding-left: 2px;
+}
+
+.info__list {
+  margin-top: -9px;
+  margin-left: 58px;
+  margin-bottom: 17px;
+}
+
+.olInfo__list {
+  margin-top: -12px;
+  margin-left: 59px;
+  margin-bottom: 13px;
 }
 
 .olInfo__list {
