@@ -633,20 +633,13 @@ h6 {
   color: #434343;
 }
 .main .year__block1 .title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  text-transform: uppercase;
-  margin: 0 0px 0 -3px;
+  margin: 0 0px 0 -2px;
 }
 .main .year__block1 .icon-pointsArrow::before {
   color: #2B901A;
   font-size: 24px;
 }
 .main .year__block1 .sybtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   margin: 12px 0 28px;
 }
 .main .year__block2 {
@@ -654,7 +647,7 @@ h6 {
   font-style: normal;
   color: #434343;
   padding: 39px 0 44px;
-  background: url(../img/image\ 21.jpg);
+  background: url(../img/imagep.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -721,23 +714,7 @@ h6 {
   line-height: 28px;
   color: #434343;
 }
-.main .year__block3 .icon-pointsArrow::before {
-  color: #2B901A;
-  font-size: 24px;
-}
-.main .year__block3 .product__top {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #C9C9C9;
-  padding-bottom: 54px;
-  padding-left: 2px;
-}
 .main .year__block3 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
   /* or 117% */
   color: #434343;
 }
@@ -753,23 +730,16 @@ h6 {
   margin: -10px 101px 0 0;
 }
 .main .year__block3 .check {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
   white-space: nowrap;
   text-transform: uppercase;
+  margin: 0;
   color: #FFFFFF;
 }
 .main .year__block3 .arrow {
   margin-left: 28px;
   width: 14px;
   height: 7px;
-}
-.main .year__block3 .productDrop {
-  margin: 26px 0 0 0;
 }
 .main .year__block3 .type {
   display: flex;
@@ -849,11 +819,8 @@ h6 {
 .main .year__block3 .show__more {
   margin: -9px 0 0 0;
 }
-.main .year__block3 .gorizont__line {
-  width: 970px;
-}
 .main .year__block3 .show__more-btn {
-  margin: 0px 3px 0 0px;
+  margin: 1px 5px 0 22px;
   text-transform: uppercase;
 }
 .main .year__block3 .form__group {
@@ -966,21 +933,16 @@ h6 {
 .main .year__block3 .showMore__productBtn {
   cursor: pointer;
   margin: -27px auto 79px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
   text-align: center;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
-  padding: 13px 0 12px;
+  padding: 13px 0 11px;
   background-color: #2B901A;
-  width: 183px;
+  width: 184px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -994,20 +956,14 @@ h6 {
   margin-bottom: 107px;
 }
 .main .year__block4 .block4__title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
-  font-size: 28px;
   line-height: 33px;
-  text-transform: uppercase;
-  margin-bottom: 26px;
-  color: #434343;
+  margin: 0 0 26px -1px;
 }
 .main .year__block4 .block4__paragraf {
   margin: 0 1px 27px 3px;
 }
-.main .year__block4 .info__list,
-.main .year__block4 .olInfo__list {
+.main .year__block4 .info__list {
   margin-top: -9px;
   margin-left: 58px;
   margin-bottom: 17px;
@@ -1019,16 +975,6 @@ h6 {
 }
 .main .year__block4 .centrPoint {
   top: -4px;
-}
-.main .year__block4 .olInfo__list {
-  list-style-type: none;
-  counter-reset: list;
-}
-.main .year__block4 .olInfo__list .info__listItem::before {
-  content: counter(list) ".";
-  counter-increment: list;
-  color: #2B901A;
-  font-weight: 600;
 }
 .main .year__block4 .icon-circles {
   position: relative;
@@ -1053,19 +999,12 @@ h6 {
   margin-bottom: 100px;
 }
 .main .year__block5 .title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-left: 2px;
-  margin-bottom: 41px;
+  margin: -1px 0 43px 3px;
   color: #434343;
-}
-.main .year__block5 .icon-pointsArrow::before {
-  color: #2B901A;
-  font-size: 26px;
 }
 .main .year__block5 .yearsBtn {
   display: flex;
@@ -1076,7 +1015,7 @@ h6 {
 .main .year__block5 .yearsBtn__btn {
   cursor: pointer;
   width: 154px;
-  padding: 13px 0 12px;
+  padding: 13px 0 11px;
   background: #2B911A;
   font-family: 'Roboto';
   font-style: normal;
@@ -1102,41 +1041,19 @@ h6 {
   background: #C9C9C9;
   color: #434343;
 }
-.main .car__block1 .title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  text-transform: uppercase;
+.main .car__block1 h1 {
   margin: 0 0 12px -3px;
-  color: #434343;
 }
 .main .car__block1 .icon-pointsArrow::before {
   color: #2B901A;
   font-size: 24px;
 }
-.main .car__block1 .paragref {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  margin: 0 0 28px 0;
-  color: #434343;
-}
 .main .car__block2 {
   margin: 0 0 32px 0;
 }
-.main .car__block2 .title {
+.main .car__block2 h2 {
   margin: 71px -2px 78px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 33px;
-  color: #434343;
+  text-transform: none;
 }
 .main .car__block2 .icon-pointsArrow::before {
   color: #2B901A;
@@ -1152,7 +1069,7 @@ h6 {
   border-bottom: 1px solid #C9C9C9;
   margin-bottom: 40px;
 }
-.main .car__block2 .searchLi__link {
+.main .car__block2 .searchLi a {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -1172,16 +1089,7 @@ h6 {
   color: #2B901A;
 }
 .main .car__block3 {
-  margin-bottom: 43px;
-}
-.main .car__block3 .paregraf {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  color: #434343;
+  margin-bottom: 50px;
 }
 .main .model__block1 .title {
   font-family: 'Roboto';
@@ -1322,12 +1230,6 @@ h6 {
 .main .type__block3 .icon-pointsArrow::before {
   margin-right: 7px;
 }
-.main .type__block3 .product__top {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #C9C9C9;
-  padding-bottom: 55px;
-}
 .main .type__block3 .title {
   font-family: 'Roboto';
   font-style: normal;
@@ -1362,9 +1264,6 @@ h6 {
   margin-left: 20px;
   width: 14px;
   height: 7px;
-}
-.main .type__block3 .productDrop {
-  margin: 0px 0 0 0;
 }
 .main .type__block3 .type {
   display: flex;
@@ -2512,6 +2411,79 @@ h1 {
 
 h1.icon-pointsArrow::before {
   font-size: 24px;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #434343;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: none;
+  color: #434343;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: none;
+  color: #434343;
+}
+
+h5 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: none;
+  color: #434343;
+}
+
+h6 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: none;
+  color: #434343;
+}
+
+.productDrop {
+  margin: 26px 0 0 0;
+}
+
+.product__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #C9C9C9;
+  padding-bottom: 54px;
+  padding-left: 2px;
+}
+
+.olInfo__list {
+  list-style-type: none;
+  counter-reset: list;
+}
+.olInfo__list .info__listItem::before {
+  content: counter(list) ".";
+  counter-increment: list;
+  color: #2B901A;
+  font-weight: 600;
 }
 
 .footer {
