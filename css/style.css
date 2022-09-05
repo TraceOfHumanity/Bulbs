@@ -880,11 +880,7 @@ h6 {
   color: #434343;
 }
 .main .car__block1 h1 {
-  margin: 0 0 12px -3px;
-}
-.main .car__block1 .icon-pointsArrow::before {
-  color: #2B901A;
-  font-size: 24px;
+  margin: 0 -2px 23px -1px;
 }
 .main .car__block2 {
   margin: 0 0 32px 0;
@@ -2020,6 +2016,7 @@ li {
 }
 
 h1 {
+  position: relative;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -2027,13 +2024,18 @@ h1 {
   line-height: 38px;
   text-transform: uppercase;
   color: #434343;
+  padding: 0 0 0 32px;
 }
 
 h1.icon-pointsArrow::before {
+  position: absolute;
+  top: 7px;
+  left: 1px;
   font-size: 24px;
 }
 
 h2 {
+  position: relative;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -2041,6 +2043,14 @@ h2 {
   line-height: 33px;
   text-transform: uppercase;
   color: #434343;
+  padding: 0 0 0 32px;
+}
+
+h2.icon-pointsArrow::before {
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  font-size: 24px;
 }
 
 h3 {
@@ -2173,6 +2183,10 @@ h6 {
   color: #2B901A;
 }
 
+.main .car__block2 .searchLi a:hover {
+  color: #2B901A;
+}
+
 .footer {
   margin: 0 0 0 0;
 }
@@ -2294,8 +2308,68 @@ h6 {
 
 @media (max-width: 1140px) {
   .container {
-    width: calc(769px + (1110 - 769) * ((100vw - 769px) / (1140 - 769)));
+    width: calc(769px + (1090 - 769) * ((100vw - 769px) / (1140 - 769)));
     margin: 0 auto;
+  }
+
+  .footer .footer__top {
+    padding: 35px 0 37px 0;
+  }
+  .footer .footer__top .container {
+    flex-direction: column;
+    width: calc(335px + (768 - 335) * ((100vw - 360px) / (768 - 360)));
+  }
+  .footer .footer__top .footer__topLeft {
+    order: 2;
+  }
+  .footer .footer__top .footer__topRight {
+    width: calc(539px + (1090 - 539) * ((100vw - 549px) / (1140 - 549)));
+    margin: -10px 23px 0 0;
+    gap: 0;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .footer .footer__top .footer__topRight-list {
+    width: 128px;
+  }
+  .footer .footer__top .footer__topLeft {
+    position: relative;
+  }
+  .footer .footer__top .footer__topLeft .nameCompany {
+    width: calc(338px + (1090 - 338) * ((100vw - 360px) / (1140 - 360)));
+    position: relative;
+    margin: 26px auto 19px auto;
+    padding: 20px 0 18px 38px;
+    border-top: 1px solid #C9C9C9;
+    border-bottom: 1px solid #C9C9C9;
+  }
+  .footer .footer__top .footer__topLeft .icon-lamp::before {
+    top: 16px;
+    left: 1px;
+    font-size: 27px;
+  }
+  .footer .footer__top .footer__topLeft .footet__soc {
+    top: 40px;
+    right: 49px;
+  }
+  .footer .footer__left-p {
+    padding: 2px 21px 0;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .footer .footer__bottom .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer .footer__bottom .footer__bottom-text {
+    order: 2;
+  }
+  .footer .footer__bottom .footer__bottom-icons {
+    order: 1;
+    margin: 0px 0 0 10px;
+  }
+  .footer .footer__bottom .bottom-text__text {
+    padding: 7px 55px 0 51px;
   }
 }
 @media (max-width: 768px) {
@@ -2400,7 +2474,7 @@ h6 {
   }
 
   .main .container {
-    width: calc(335px + (768 - 335) * ((100vw - 360px) / (768 - 360)));
+    width: calc(335px + (750 - 335) * ((100vw - 360px) / (768 - 360)));
   }
   .main .container .block2__subTitle2 {
     margin: 20px 0 24px 2px;
@@ -2477,6 +2551,27 @@ h6 {
     width: calc(335px + (768 - 335) * ((100vw - 360px) / (768 - 360)));
   }
 
+  .crumbs {
+    margin: 2px 0 19px 14px;
+  }
+
+  .main .car__block2 {
+    margin: 0 0 11px 0;
+  }
+  .main .car__block2 h2 {
+    margin: 40px -1px 26px;
+    text-transform: none;
+  }
+  .main .car__block2 .searhBulb {
+    margin: 0 0 0 4px;
+  }
+  .main .car__block2 .searchLi {
+    width: 330px;
+  }
+  .main .car__block3 {
+    margin-bottom: 64px;
+  }
+
   .footer .footer__top {
     padding: 35px 0 37px 0;
   }
@@ -2488,11 +2583,10 @@ h6 {
     order: 2;
   }
   .footer .footer__top .footer__topRight {
-    order: 1;
-    gap: 0;
-    flex-wrap: wrap;
     margin: -10px 23px 0 0;
+    gap: 0;
     justify-content: space-between;
+    margin: 0;
   }
   .footer .footer__top .footer__topRight-list {
     width: 128px;
@@ -2501,7 +2595,7 @@ h6 {
     position: relative;
   }
   .footer .footer__top .footer__topLeft .nameCompany {
-    width: 90%;
+    width: calc(338px + (746 - 338) * ((100vw - 360px) / (768 - 360)));
     position: relative;
     margin: 26px auto 19px auto;
     padding: 20px 0 18px 38px;
@@ -2519,6 +2613,7 @@ h6 {
   }
   .footer .footer__left-p {
     padding: 2px 21px 0;
+    width: 100%;
     margin: 0 0 0 0;
   }
   .footer .footer__bottom .container {
@@ -2534,6 +2629,19 @@ h6 {
   }
   .footer .footer__bottom .bottom-text__text {
     padding: 7px 55px 0 51px;
+  }
+}
+@media (max-width: 548px) {
+  .footer .footer__top .footer__topRight {
+    width: 93%;
+    order: 1;
+    gap: 0;
+    flex-wrap: wrap;
+    margin: -10px 23px 0 0;
+    justify-content: space-between;
+  }
+  .footer .footer__left-p {
+    width: 377px;
   }
 }
 
