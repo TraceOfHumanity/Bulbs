@@ -2323,7 +2323,7 @@ h6 {
   }
 
   .header__logo {
-    margin-left: calc(10px + (0 - 10) * ((100vw - 769px) / (1140 - 769)));
+    margin-left: calc(0px + (0 - 0) * ((100vw - 360px) / (1140 - 360)));
   }
 
   .crumbs {
@@ -2341,6 +2341,10 @@ h6 {
   .main .contact__form .midle__radios {
     flex-wrap: wrap;
     gap: 6px;
+  }
+
+  .main .year__block1 .sybtitle {
+    margin: 6px 0px 16px;
   }
 
   .footer .footer__top {
@@ -2631,6 +2635,58 @@ h6 {
   .main .contact__form .formBtn {
     margin-top: 25px;
     margin-right: 3px;
+  }
+
+  .main .year__block2 .container {
+    flex-direction: column;
+  }
+
+  .main .year__block2 .block2__left {
+    width: 100%;
+  }
+
+  .main .year__block2 .title {
+    margin: 0 0 11px 0;
+  }
+
+  .main .year__block2 .block2__right {
+    padding: 19px 49px 0 2px;
+    width: 100%;
+  }
+
+  .main .year__block2 .side .side__link {
+    font-size: 20px;
+  }
+
+  .main .year__block2 {
+    padding: 39px 0 21px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .product__top {
+    flex-direction: column;
+    padding-bottom: 43px;
+  }
+
+  .main .year__block3 {
+    margin-top: 40px;
+  }
+
+  .main .year__block3 .product__topBtn {
+    margin: 44px auto 0;
+  }
+
+  .productDrop {
+    margin: 22px 0 0 0;
+  }
+
+  .main .year__block3 .type {
+    display: flex;
+    gap: 15px;
+    width: 330px;
   }
 
   .crumbs {
