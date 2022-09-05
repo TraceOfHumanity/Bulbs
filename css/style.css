@@ -975,24 +975,6 @@ h6 {
   /* or 156% */
   color: #2B901A;
 }
-.main .model__block2 .searcYearBtn__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2B901A;
-  border-radius: 10px;
-  padding: 13px 0 12px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  width: 159px;
-  text-align: center;
-  text-transform: uppercase;
-  height: max-content;
-  color: #FFFFFF;
-}
 .main .model__block3 {
   margin: 52px 0px 32px 22px;
 }
@@ -2103,6 +2085,34 @@ h6 {
   margin: 26px 0 0 0;
 }
 
+.searcYearBtn__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2B901A;
+  border-radius: 10px;
+  padding: 13px 0 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  width: 159px;
+  text-align: center;
+  text-transform: uppercase;
+  height: max-content;
+  color: #FFFFFF;
+}
+
+.searcYearBtn__link:hover {
+  background: #C9C9C9;
+  color: #434343;
+}
+
+.mobileHidden {
+  display: none;
+}
+
 .product__top {
   display: flex;
   justify-content: space-between;
@@ -2310,6 +2320,14 @@ h6 {
   .container {
     width: calc(769px + (1090 - 769) * ((100vw - 769px) / (1140 - 769)));
     margin: 0 auto;
+  }
+
+  .crumbs {
+    width: calc(310px + (1090 - 310) * ((100vw - 769px) / (1140 - 769)));
+  }
+
+  .main .container {
+    width: calc(335px + (1090 - 335) * ((100vw - 360px) / (1140 - 360)));
   }
 
   .footer .footer__top {
@@ -2549,6 +2567,29 @@ h6 {
   .main .main__block5 .container {
     flex-direction: column;
     width: calc(335px + (768 - 335) * ((100vw - 360px) / (768 - 360)));
+  }
+
+  .main .model__block1 .title {
+    margin: 0 0 19px -1px;
+  }
+
+  .main .model__block2 .title {
+    margin: 37px 3px 73px -2px;
+  }
+
+  .main .model__block2 .searcYearBtn {
+    margin-left: 1px;
+  }
+
+  .main .model__block2 .rightColomn {
+    margin-left: 2s3px;
+  }
+
+  .main .model__block3 {
+    margin: 9px 0px 32px -3px;
+  }
+  .main .model__block3 .container {
+    width: calc(341px + (750 - 335) * ((100vw - 360px) / (768 - 360)));
   }
 
   .crumbs {
