@@ -2406,7 +2406,7 @@ h6 {
   }
 
   .header__logo {
-    margin-left: calc(0px + (0 - 0) * ((100vw - 360px) / (1140 - 360)));
+    margin-left: calc(7px + (0 - 0) * ((100vw - 769px) / (1140 - 769)));
   }
 
   .crumbs {
@@ -2474,9 +2474,9 @@ h6 {
     margin: 23px 0 0 21px;
   }
   .footer .footer__left-p {
-    padding: 2px 21px 0;
     width: 100%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 calc(0px + (20 - 0) * ((100vw - 360px) / (1140 - 360)));
+    padding-right: calc(0px + (55 - 0) * ((100vw - 360px) / (1140 - 360)));
   }
   .footer .footer__bottom .container {
     width: 100%;
@@ -2861,11 +2861,6 @@ h6 {
   .footer .select-box {
     width: 50%;
   }
-  .footer .footer__left-p {
-    padding: 2px 21px 0;
-    width: 100%;
-    margin: 0 0 0 0;
-  }
   .footer .footer__bottom .container {
     width: 100%;
     flex-direction: column;
@@ -2889,9 +2884,6 @@ h6 {
     flex-wrap: wrap;
     margin: -10px 23px 0 0;
     justify-content: space-between;
-  }
-  .footer .footer__left-p {
-    width: 377px;
   }
 }
 
