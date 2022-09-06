@@ -2705,7 +2705,7 @@ li {
   right: 100px;
   border-radius: 10px;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .eps {
@@ -3761,17 +3761,11 @@ h6 {
   }
 
   .hiddenBtnShow {
-    width: 185px;
-    height: 52px;
-    background-color: #A10202;
     position: relative;
     // bottom: 97px;
     right: 0px;
     top: -96px;
     margin: 0 auto;
-    border-radius: 10px;
-    cursor: pointer;
-    opacity: 0.5;
   }
 
   .showMore__productBtn {
@@ -4202,6 +4196,7 @@ h6 {
   // flex-wrap: wrap;
   gap: 16px 23px;
   // margin: 0 0 0 1px;
+  justify-content: center;
 }
 .main .year__block5 {
     margin-top: 38px;
