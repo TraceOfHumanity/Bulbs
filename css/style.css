@@ -2104,10 +2104,6 @@ h6 {
   color: #434343;
 }
 
-.mobileHidden {
-  display: none;
-}
-
 .product__top {
   display: flex;
   justify-content: space-between;
@@ -2524,6 +2520,10 @@ h6 {
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
     width: 0px;
+  }
+
+  .mobileHidden {
+    display: none;
   }
 
   .main .main__block1 .container {
