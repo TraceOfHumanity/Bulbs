@@ -1652,6 +1652,9 @@ li {
   color: #2B901A;
   margin: 0 -2px 0 22px;
   white-space: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
 }
 .show__more-btn .icon-pointsArrow::before {
   font-size: 13px;
@@ -2196,6 +2199,10 @@ h6 {
   color: #2B901A;
 }
 
+.descHidden {
+  display: none;
+}
+
 .footer {
   margin: 0 0 0 0;
 }
@@ -2530,6 +2537,18 @@ h6 {
     width: 0px;
   }
 
+  .descHidden {
+    display: block;
+  }
+
+  .main .year__block3 .title {
+    font-size: 22px;
+  }
+
+  .mobileHidden.active {
+    display: block;
+  }
+
   .hiddenBtnShow {
     width: 185px;
     height: 52px;
@@ -2541,6 +2560,10 @@ h6 {
     border-radius: 10px;
     cursor: pointer;
     opacity: 0.5;
+  }
+
+  .showMore__productBtn {
+    margin: -39px auto 79px;
   }
 
   .header__logo {
