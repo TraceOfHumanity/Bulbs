@@ -808,14 +808,6 @@ h6 {
 .main .year__block4 .centrPoint {
   top: -4px;
 }
-.main .year__block4 .icon-circles {
-  position: relative;
-}
-.main .year__block4 .icon-circles::before {
-  color: #2B901A;
-  font-size: 14px;
-  margin-right: 2px;
-}
 .main .year__block4 .centrPoint {
   width: 4px;
   position: absolute;
@@ -1060,11 +1052,6 @@ h6 {
   -moz-transform: translate(102%, 222%);
   -ms-transform: translate(102%, 222%);
   -o-transform: translate(102%, 222%);
-}
-.main .type__block3 .icon-circles::before {
-  color: #2B901A;
-  font-size: 14px;
-  margin-right: 2px;
 }
 .main .type__block3 .info__list {
   margin-top: 7px;
@@ -1669,26 +1656,33 @@ li {
   margin: 0 4px 0 2px;
 }
 
+.info__listItem {
+  padding: 0 0 0 20px;
+}
+
 .icon-circles {
   position: relative;
 }
 
-.icon-circles::before {
+.info__listItem.icon-circles::before {
+  position: absolute;
+  top: 11px;
+  left: 0;
   color: #2B901A;
-  font-size: 14px;
-  margin-right: 2px;
+  font-size: 13px;
+  margin-right: 0px;
 }
 
 .centrPoint {
-  width: 4px;
+  width: 3px;
   position: absolute;
   top: 7px;
   left: 1px;
-  transform: translate(102%, 222%);
-  -webkit-transform: translate(102%, 222%);
-  -moz-transform: translate(102%, 222%);
-  -ms-transform: translate(102%, 222%);
-  -o-transform: translate(102%, 222%);
+  transform: translate(1px, 1px);
+  -webkit-transform: translate(1px, 1px);
+  -moz-transform: translate(1px, 1px);
+  -ms-transform: translate(1px, 1px);
+  -o-transform: translate(1px, 1px);
 }
 
 .form__group {
