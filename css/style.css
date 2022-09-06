@@ -2522,6 +2522,10 @@ h6 {
     width: 0px;
   }
 
+  .header__logo {
+    margin-left: calc(-9px + (0 - 9) * ((100vw - 360px) / (768 - 360)));
+  }
+
   .mobileHidden {
     display: none;
   }
@@ -2798,23 +2802,29 @@ h6 {
     width: 330px;
   }
 
-  .status {
-    margin-top: 45px;
-    margin-left: 28px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #222629;
-  }
-
   .main .year__block3 .lamp__img {
     margin-left: 0px;
     margin-top: -6px;
+    display: flex;
+  }
+
+  .main .year__block3 .lamp {
+    flex-direction: column;
+  }
+
+  .main .year__block3 .lamp__imgImg {
+    width: 119px;
+  }
+
+  .main .year__block3 .info__title {
+    width: 189px;
+    margin: -53px 0 18px 147px;
+    font-size: 20px;
+  }
+
+  .status {
+    margin-top: -7px;
+    margin-left: 28px;
   }
 
   .crumbs {
