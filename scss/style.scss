@@ -2697,7 +2697,7 @@ li {
   right: 100px;
   border-radius: 10px;
   cursor: pointer;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .eps {
@@ -3727,7 +3727,19 @@ h6 {
   ::-webkit-scrollbar {
     width: 0px;
   }
-
+  .hiddenBtnShow {
+    width: 185px;
+    height: 52px;
+    background-color: #A10202;
+    position: relative;
+    // bottom: 97px;
+    right: 0px; 
+    top: -96px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
   .header__logo {
     margin-left: calc(-9px + (0 - 9) * ((100vw - 360px) / (768 - 360)));
   }

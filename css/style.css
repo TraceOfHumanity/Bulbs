@@ -1700,7 +1700,7 @@ li {
   right: 100px;
   border-radius: 10px;
   cursor: pointer;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .eps {
@@ -2528,6 +2528,19 @@ h6 {
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
     width: 0px;
+  }
+
+  .hiddenBtnShow {
+    width: 185px;
+    height: 52px;
+    background-color: #A10202;
+    position: relative;
+    right: 0px;
+    top: -96px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
   }
 
   .header__logo {
