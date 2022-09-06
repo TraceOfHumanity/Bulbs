@@ -515,6 +515,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 1px;
+  gap: 10px;
 }
 .main .main__block2 .btn__go {
   cursor: pointer;
@@ -2401,8 +2402,17 @@ h6 {
 
 @media (max-width: 1140px) {
   .container {
-    width: calc(769px + (1090 - 769) * ((100vw - 769px) / (1140 - 769)));
+    width: calc(735px + (1090 - 735) * ((100vw - 769px) / (1140 - 769)));
     margin: 0 auto;
+  }
+
+  .main .main__block1 .container {
+    width: calc(735px + (1090 - 735) * ((100vw - 769px) / (1140 - 769)));
+  }
+
+  .main .main__block1 .block1__content-img {
+    height: calc(168px + (249 - 168) * ((100vw - 769px) / (1140 - 769)));
+    width: 398px;
   }
 
   .header__logo {
@@ -2414,6 +2424,18 @@ h6 {
   }
 
   .main .container {
+    width: calc(335px + (1090 - 335) * ((100vw - 360px) / (1140 - 360)));
+  }
+
+  .main .main__block4 .container {
+    width: calc(735px + (1090 - 735) * ((100vw - 769px) / (1140 - 769)));
+  }
+
+  .main .main__block4 .dropdown {
+    margin-right: 0px;
+  }
+
+  .main .main__block5 .container {
     width: calc(335px + (1090 - 335) * ((100vw - 360px) / (1140 - 360)));
   }
 
@@ -2619,7 +2641,7 @@ h6 {
   }
   .main .container .btn__go {
     width: 184px;
-    margin: 38px 0px 31px 153px;
+    margin: 38px 0px 31px calc(153px + (940 - 153) * ((100vw - 360px) / (1140 - 360)));
   }
 
   .main .main__block3 {
