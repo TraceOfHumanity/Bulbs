@@ -1023,6 +1023,8 @@ h6 {
     }
   }
 
+
+
   .year__block4 {
     margin-bottom: 57px;
 
@@ -1036,8 +1038,11 @@ h6 {
     }
 
     .block4__paragraf {
-      margin: 0 1px 27px 3px;
+      margin: 0 5px 27px 0px;
     }
+
+
+
 
 
 
@@ -3206,7 +3211,15 @@ h6 {
   list-style-type: none;
   counter-reset: list;
 
+  .info__listItem {
+    position: relative;
+
+  }
+
   .info__listItem::before {
+    position: absolute;
+    top: 0;
+    left: 0;
     content: counter(list) '.';
     counter-increment: list;
     color: #2B901A;
@@ -3738,9 +3751,11 @@ h6 {
   .descHidden {
     display: block;
   }
+
   .main .year__block3 .title {
     font-size: 22px;
-}
+  }
+
   .mobileHidden.active {
     display: block;
   }
@@ -4165,6 +4180,33 @@ h6 {
   .main .year__block3 .lamp {
     padding-top: 46px;
   }
+
+  .main .year__block4 {
+    margin-bottom: 0px;
+    ol,
+    ul {
+      margin-top: -11px;
+      margin-left: 12px;
+      margin-bottom: 8px;
+
+      li {
+        line-height: 28px;
+      }
+    }
+  }
+  .main .year__block5 .title {
+    margin: -1px 0 23px 3px;
+}
+.main .year__block5 .yearsBtn {
+  // display: flex;
+  // flex-wrap: wrap;
+  gap: 16px 23px;
+  // margin: 0 0 0 1px;
+}
+.main .year__block5 {
+    margin-top: 38px;
+    margin-bottom: 67px;
+}
 
   // ============================
 

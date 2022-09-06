@@ -805,7 +805,7 @@ h6 {
   margin: 0 0 26px -1px;
 }
 .main .year__block4 .block4__paragraf {
-  margin: 0 1px 27px 3px;
+  margin: 0 5px 27px 0px;
 }
 .main .year__block4 .centrPoint {
   top: -4px;
@@ -2139,7 +2139,13 @@ h6 {
   list-style-type: none;
   counter-reset: list;
 }
+.olInfo__list .info__listItem {
+  position: relative;
+}
 .olInfo__list .info__listItem::before {
+  position: absolute;
+  top: 0;
+  left: 0;
   content: counter(list) ".";
   counter-increment: list;
   color: #2B901A;
@@ -2895,6 +2901,33 @@ h6 {
 
   .main .year__block3 .lamp {
     padding-top: 46px;
+  }
+
+  .main .year__block4 {
+    margin-bottom: 0px;
+  }
+  .main .year__block4 ol,
+  .main .year__block4 ul {
+    margin-top: -11px;
+    margin-left: 12px;
+    margin-bottom: 8px;
+  }
+  .main .year__block4 ol li,
+  .main .year__block4 ul li {
+    line-height: 28px;
+  }
+
+  .main .year__block5 .title {
+    margin: -1px 0 23px 3px;
+  }
+
+  .main .year__block5 .yearsBtn {
+    gap: 16px 23px;
+  }
+
+  .main .year__block5 {
+    margin-top: 38px;
+    margin-bottom: 67px;
   }
 
   .crumbs {
