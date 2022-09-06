@@ -2493,7 +2493,7 @@ h6 {
   }
   .footer .select-box {
     width: 430px;
-    margin: 23px 0 0 21px;
+    margin: 23px 0 0 calc(0px + (20 - 0) * ((100vw - 360px) / (1140 - 360)));
   }
   .footer .footer__left-p {
     width: 100%;

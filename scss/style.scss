@@ -3846,7 +3846,7 @@ h6 {
     .select-box {
       // display: flex;
       width: 430px;
-      margin: 23px 0 0 21px;
+      margin: 23px 0 0 calc(0px + (20 - 0) * ((100vw - 360px) / (1140 - 360)));
       // flex-direction: column;
       // position: relative;
     }
@@ -4359,6 +4359,7 @@ h6 {
     .select-box {
       // display: flex;
       width: 50%;
+      // margin: 23px 0 0 0px;
       // margin: 0 0 0 calc(0px + (-10 - 0) * ((100vw - 360px) / (768 - 360)));
       // margin: 23px 0 0 21px;
       // flex-direction: column;
