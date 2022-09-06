@@ -698,6 +698,7 @@ h6 {
 }
 .main .year__block3 .product {
   margin-bottom: 93px;
+  position: relative;
 }
 .main .year__block3 .product__title {
   font-family: 'Roboto';
@@ -709,6 +710,7 @@ h6 {
 }
 .main .year__block3 .title {
   /* or 117% */
+  font-size: 24px;
   color: #434343;
 }
 .main .year__block3 .product__topBtn {
@@ -1669,24 +1671,36 @@ li {
   top: 11px;
   left: 0;
   color: #2B901A;
-  font-size: 13px;
+  font-size: 14px;
   margin-right: 0px;
 }
 
 .centrPoint {
-  width: 3px;
+  width: 4px;
   position: absolute;
   top: 7px;
   left: 1px;
-  transform: translate(1px, 1px);
-  -webkit-transform: translate(1px, 1px);
-  -moz-transform: translate(1px, 1px);
-  -ms-transform: translate(1px, 1px);
-  -o-transform: translate(1px, 1px);
+  transform: translate(102%, 222%);
+  -webkit-transform: translate(102%, 222%);
+  -moz-transform: translate(102%, 222%);
+  -ms-transform: translate(102%, 222%);
+  -o-transform: translate(102%, 222%);
 }
 
 .form__group {
   height: 42px;
+}
+
+.hiddenBtnShow {
+  width: 185px;
+  height: 52px;
+  background-color: #A10202;
+  position: absolute;
+  top: -10px;
+  right: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .eps {
@@ -2794,6 +2808,7 @@ h6 {
     display: flex;
     gap: 15px;
     width: 330px;
+    margin: 0px 0 10px 0;
   }
 
   .main .year__block3 .lamp__img {
@@ -2812,13 +2827,38 @@ h6 {
 
   .main .year__block3 .info__title {
     width: 189px;
-    margin: -53px 0 18px 147px;
+    margin: -53px 0 22px 147px;
     font-size: 20px;
   }
 
   .status {
     margin-top: -7px;
     margin-left: 28px;
+  }
+
+  .info__listItem {
+    padding: 0 0 8px 20px;
+  }
+
+  .info__list li {
+    line-height: 28px;
+  }
+
+  .info__listItem.icon-circles::before {
+    top: 7px;
+    font-size: 13px;
+  }
+
+  .main .year__block3 .info__list {
+    margin: 0px 0 0 0;
+  }
+
+  .product .form__group {
+    margin: 29px auto 0;
+  }
+
+  .main .year__block3 .lamp {
+    padding-top: 46px;
   }
 
   .crumbs {
