@@ -1392,7 +1392,7 @@ h6 {
       text-transform: none;
       // padding-bottom: 15px;
       font-size: 28px;
-      padding: 0px 0 0px 6px;
+      // padding: 0px 0 0px 6px;
     }
 
 
@@ -2653,7 +2653,8 @@ li {
   .icon-pointsArrow::before {
     // font-size: 12px;
     font-size: 13px;
-    margin: 0 4px 0 2px;
+    margin: 0 4px 0 13px;
+    // margin: 0 4px 0 2px;
   }
 }
 
@@ -3117,12 +3118,16 @@ h3 {
   line-height: 28px;
   text-transform: none;
   color: #434343;
+  padding: 0 0 0 32px;
 }
 
 h3.icon-pointsArrow::before {
+  position: absolute;
   font-size: 24px;
   padding: 0 8px 0 0;
-  margin-left: -7px;
+  margin-left: 0px;
+  margin-top: 3px;
+  left: 0;
 }
 
 h4 {
@@ -4114,12 +4119,23 @@ h6 {
 
   .main .year__block3 .type {
     display: flex;
-    gap: 15px;
+    gap: 20px 16px;
     width: 330px;
     margin: 0px 0 10px 0;
+    height: max-content;
+    flex-wrap: wrap;
   }
-
-
+  .main .type__block3 .type__btn {
+    min-width: 99px;
+    width:calc(99px + (175 - 99) * ((100vw - 360px) / (768 - 360)));
+}
+.main .type__block3 .type {
+  margin: 0px 0 43px 0;
+  width: calc(330px + (750 - 330) * ((100vw - 360px) / (768 - 360)));
+}
+.main .type__block3 .title {
+  font-size: 28px;
+}
 
   .main .year__block3 .lamp__img {
     // min-width: 119px;
@@ -4202,7 +4218,22 @@ h6 {
     margin-top: 38px;
     margin-bottom: 67px;
 }
-
+.main .type__block1 .sybtitle {
+  margin: 33px 0px -10px 1px;
+}
+.main .type__block3 {
+  h5{
+    font-size: 28px;
+  }
+}
+.dropdown__list--visible {
+  display: block;
+  background-color: #ffffff;
+  border: 2px solid #2B901A;
+}
+.dropdown__list{
+  border-top: none;
+}
   // ============================
 
   .crumbs {
