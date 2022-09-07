@@ -1197,6 +1197,8 @@ h6 {
 }
 .main .about__block5 .coverImg {
   max-height: 110px;
+  display: flex;
+  justify-content: center;
 }
 .main .about__block6 {
   margin: 0 0 0 4px;
@@ -1260,9 +1262,13 @@ h6 {
 .main .about__block11 .example h6 {
   /* or 140% */
   margin: 7px 0 0 1px;
+  padding: 0;
 }
 .main .about__block11 .example__img {
   min-width: 100%;
+}
+.main .about__block11 .example__img img {
+  width: 100%;
 }
 .main .about__block12 {
   margin-bottom: 38px;
@@ -1303,7 +1309,7 @@ h6 {
   width: 190px;
 }
 .main .about__block13 .person__img {
-  min-width: 100%;
+  width: 190px;
 }
 .main .about__block13 .person__info {
   position: relative;
@@ -1313,6 +1319,7 @@ h6 {
   justify-content: space-between;
 }
 .main .about__block13 .person__info h6 {
+  padding: 0;
   margin: 0 0 0 0;
   font-weight: 500;
   /* or 140% */
@@ -2093,6 +2100,7 @@ h4.icon-pointsArrow::before {
 }
 
 h5 {
+  position: relative;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -2100,9 +2108,20 @@ h5 {
   line-height: 28px;
   text-transform: none;
   color: #434343;
+  padding: 0 0 0 32px;
+}
+
+h5.icon-pointsArrow::before {
+  position: absolute;
+  font-size: 24px;
+  padding: 0 8px 0 0;
+  margin-left: 0px;
+  margin-top: 3px;
+  left: 0;
 }
 
 h6 {
+  position: relative;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -2110,6 +2129,16 @@ h6 {
   line-height: 28px;
   text-transform: none;
   color: #434343;
+  padding: 0 0 0 32px;
+}
+
+h6.icon-pointsArrow::before {
+  position: absolute;
+  font-size: 24px;
+  padding: 0 8px 0 0;
+  margin-left: 0px;
+  margin-top: 3px;
+  left: 0;
 }
 
 .productDrop {
@@ -2182,6 +2211,8 @@ h6 {
   justify-content: space-between;
   align-items: center;
   margin: 26px -1px 0 1px;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .realProjects.active {
@@ -2498,6 +2529,10 @@ h6 {
     margin: 6px 0px 16px;
   }
 
+  .main .about__block13 .team {
+    justify-content: space-evenly;
+  }
+
   .footer .footer__top {
     padding: 35px 0 37px 0;
   }
@@ -2565,6 +2600,11 @@ h6 {
   .main .about__block5 .container {
     justify-content: space-around;
     align-items: center;
+  }
+}
+@media (max-width: 860px) {
+  .main .about__block11 .example {
+    width: 49%;
   }
 }
 @media (max-width: 840px) {
@@ -3053,6 +3093,72 @@ h6 {
 
   .main .about__block9 {
     margin: 0 0 49px 0;
+  }
+
+  .main .about__block10 {
+    margin-bottom: 36px;
+  }
+
+  .realProjects {
+    margin-top: 48px;
+    flex-wrap: wrap;
+    gap: 23px;
+  }
+
+  .main .about__block11 {
+    padding: 32px 0 67px;
+    margin-bottom: 44px;
+  }
+
+  .main .about__block11 .example h6 {
+    margin: 10px 0 0 18px;
+  }
+
+  .main .about__block11 .example {
+    display: flex;
+    width: 100%;
+  }
+
+  .main .about__block11 .example__img {
+    min-width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
+    width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
+  }
+
+  .main .about__block13 {
+    margin-bottom: 6px;
+  }
+
+  .main .about__block13 .team {
+    margin: 32px 0px 0 1px;
+    justify-content: start;
+  }
+
+  .main .about__block13 .team__card {
+    margin: 0 0 10px 0;
+  }
+
+  .main .about__block13 .person__img {
+    width: 167px;
+  }
+
+  .main .about__block13 .person__info {
+    margin-left: 11px;
+  }
+
+  .main .about__block13 .person__links {
+    bottom: 0px;
+  }
+
+  .main .about__block13 .card__text {
+    margin: 25px 0 0 -1px;
+  }
+
+  .main .about__block14 {
+    margin-bottom: 37px;
+  }
+
+  .main .about__block14 h6 {
+    margin: 0 0 13px 2px;
   }
 
   .crumbs {
