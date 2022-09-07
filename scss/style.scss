@@ -1481,6 +1481,10 @@ h6 {
       color: #434343;
     }
 
+    // .type__btn:hover{
+    //   background: #949c92;
+    // }
+
     .selectedView {
       color: #FFFFFF;
       background: #2B911A;
@@ -1792,6 +1796,11 @@ h6 {
 
     .container {
       position: relative;
+      background: url(../img/Rectangle\ 41.jpg);
+      background-size: cover;
+      height: 247px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     .image__block2 {
@@ -1799,18 +1808,33 @@ h6 {
     }
 
     .publish {
-      position: absolute;
-      right: 21px;
-      bottom: 12px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 39px;
-      border-top: 1px solid #C9C9C9;
-      color: #FFFFFF;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 100%;
+      padding: 0 21px 21px 0;
+
+      h3 {
+        border-top: 1px solid #C9C9C9;
+
+        font-size: 20px;
+        line-height: 1;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        padding-top: 10px;
+      }
+
+      h3.icon-pointsArrow:before {
+        font-size: 20px;
+        margin: 0 0px 0 6px;
+      }
     }
 
+    // .publish.icon-pointsArrow::before{
+    //   top: 0px;
+    //   left: 0;
+    //   position: absolute;
+    // }
 
     .icon-pointsArrow {}
   }
@@ -1868,10 +1892,14 @@ h6 {
     .container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       align-items: center;
     }
 
     .brends {}
+    .coverImg{
+      max-height: 110px;
+    }
   }
 
   .about__block6 {
@@ -1879,9 +1907,11 @@ h6 {
 
     .container {}
 
-    .paragraf {
-      margin: 0 0 28px 0;
-    }
+    
+
+    // .paragraf {
+    //   margin: 0 0 28px 0;
+    // }
 
   }
 
@@ -1890,9 +1920,9 @@ h6 {
 
     .container {}
 
-    .info__list {
-      margin: -5px 0 26px 59px;
-    }
+    // .info__list {
+    //   margin: -5px 0 26px 59px;
+    // }
 
     .info__listItem {}
 
@@ -3111,6 +3141,7 @@ h2.icon-pointsArrow::before {
 }
 
 h3 {
+  position: relative;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -3131,6 +3162,7 @@ h3.icon-pointsArrow::before {
 }
 
 h4 {
+  position: relative;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -3138,6 +3170,15 @@ h4 {
   line-height: 28px;
   text-transform: none;
   color: #434343;
+  padding: 0 0 0 32px;
+}
+h4.icon-pointsArrow::before {
+  position: absolute;
+  font-size: 24px;
+  padding: 0 8px 0 0;
+  margin-left: 0px;
+  margin-top: 3px;
+  left: 0;
 }
 
 h5 {
@@ -3275,6 +3316,10 @@ h6 {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 
+}
+
+.showMore__productBtn:hover {
+  background-color: #3da02a;
 }
 
 .listItem-link {
@@ -3739,6 +3784,15 @@ h6 {
       }
     }
   }
+
+}
+
+@media (max-width: 1000px) {
+  .main .about__block5 .container {
+    // display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 @media (max-width: 840px) {
@@ -4096,7 +4150,8 @@ h6 {
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 28px;
+    // font-size: 22px;
   }
 
   .product__top {
@@ -4125,17 +4180,20 @@ h6 {
     height: max-content;
     flex-wrap: wrap;
   }
+
   .main .type__block3 .type__btn {
     min-width: 99px;
-    width:calc(99px + (175 - 99) * ((100vw - 360px) / (768 - 360)));
-}
-.main .type__block3 .type {
-  margin: 0px 0 43px 0;
-  width: calc(330px + (750 - 330) * ((100vw - 360px) / (768 - 360)));
-}
-.main .type__block3 .title {
-  font-size: 28px;
-}
+    width: calc(99px + (175 - 99) * ((100vw - 360px) / (768 - 360)));
+  }
+
+  .main .type__block3 .type {
+    margin: 0px 0 43px 0;
+    width: calc(330px + (750 - 330) * ((100vw - 360px) / (768 - 360)));
+  }
+
+  .main .type__block3 .title {
+    font-size: 28px;
+  }
 
   .main .year__block3 .lamp__img {
     // min-width: 119px;
@@ -4193,6 +4251,7 @@ h6 {
 
   .main .year__block4 {
     margin-bottom: 0px;
+
     ol,
     ul {
       margin-top: -11px;
@@ -4204,36 +4263,127 @@ h6 {
       }
     }
   }
+
   .main .year__block5 .title {
     margin: -1px 0 23px 3px;
-}
-.main .year__block5 .yearsBtn {
-  // display: flex;
-  // flex-wrap: wrap;
-  gap: 16px 23px;
-  // margin: 0 0 0 1px;
-  justify-content: center;
-}
-.main .year__block5 {
+  }
+
+  .main .year__block5 .yearsBtn {
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 16px 23px;
+    // margin: 0 0 0 1px;
+    justify-content: center;
+  }
+
+  .main .year__block5 {
     margin-top: 38px;
     margin-bottom: 67px;
+  }
+
+  .main .type__block1 .sybtitle {
+    margin: 33px 0px -10px 1px;
+  }
+
+  .main .type__block3 {
+    h5 {
+      font-size: 28px;
+    }
+  }
+
+  .dropdown__list--visible {
+    display: block;
+    background-color: #ffffff;
+    border: 2px solid #2B901A;
+  }
+
+  .dropdown__list {
+    border-top: none;
+  }
+
+  .main .about__block1 .title {
+    margin: 0 0 19px 0;
+  }
+
+  .main .about__block1 .paragraf {
+    margin: 0px 0 28px 0px;
+  }
+
+  // .main .about__block2 .container {
+  //   // position: relative;
+  //   height: 100%;
+  // }
+  // .main .about__block2 .image__block2 {
+  //   // width: 100%;
+  //   margin: -16px 0 0 0;
+  // }
+  .main .about__block2 {
+    margin: -11px 0 32px 1px;
+  }
+
+  .main .about__block2 .container {
+    // position: relative;
+    // background: url(../img/Rectangle\ 41.jpg);
+    // background-size: cover;
+    height: 185px;
+    // background-size: 332px;
+    // background-position: top left;
+  }
+
+  .main .about__block2 .publish {
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+    // height: 100%;
+    padding: 0 14px 11px 0;
+
+    h3 {
+      // border-top: 1px solid #C9C9C9;
+
+      font-size: 16px;
+    line-height: 1.2;
+      // text-transform: capitalize;
+      // color: #FFFFFF;
+      padding-top: 6px;
+    }
+
+    h3.icon-pointsArrow:before {
+      font-size: 20px;
+      margin: 0 0px 0 6px;
+    }
+  }
+  .main .about__block3 .title {
+    margin: 33px 0 17px 2px;
 }
-.main .type__block1 .sybtitle {
-  margin: 33px 0px -10px 1px;
+.main .about__block3 {
+  margin-bottom: 30px;
 }
-.main .type__block3 {
-  h5{
-    font-size: 28px;
+.main .about__block4 .title {
+  margin: 0 0 14px 1px;
+}
+.main .about__block5 {
+  margin: 30px 0 17px;
+
+  .container {
+  }
+
+  .brends {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .coverImg{
+    max-height: 110px;
+    width: 50%;
   }
 }
-.dropdown__list--visible {
-  display: block;
-  background-color: #ffffff;
-  border: 2px solid #2B901A;
+.main .about__block7 .info__list {
+  margin: 0px 0 26px 0px;
 }
-.dropdown__list{
-  border-top: none;
+.main .about__block9 {
+    margin: 0 0 49px 0;
 }
+
+
   // ============================
 
   .crumbs {
