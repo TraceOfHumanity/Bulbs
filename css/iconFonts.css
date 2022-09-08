@@ -24,7 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-car:before {
+  content: "\e908";
+}
 .icon-poisnt:before {
   content: "\e900";
 }
