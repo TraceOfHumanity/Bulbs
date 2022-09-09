@@ -1535,7 +1535,7 @@ h6 {
   /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
   background-origin: content-box;
   background-repeat: no-repeat;
-  background-image: radial-gradient(circle at center, var(--check-color) calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), rgba(255, 255, 255, 0) 0);
+  background-image: radial-gradient(circle at center, var(--theme) calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), rgba(255, 255, 255, 0) 0);
 }
 .main .contact__form .form__bottom {
   width: 100%;
@@ -2179,11 +2179,6 @@ h6.icon-pointsArrow::before {
   text-transform: uppercase;
   height: max-content;
   color: #FFFFFF;
-}
-
-.searcYearBtn__link:hover {
-  background: #C9C9C9;
-  color: #434343;
 }
 
 .product__top {
