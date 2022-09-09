@@ -1194,7 +1194,7 @@ h6 {
       color: #434343;
     }
 
-    
+
 
     .lamp {
       margin: 0px 0 31px 0;
@@ -1852,10 +1852,12 @@ h6 {
 
     }
   }
-.type .selectedView {
-      color: #FFFFFF;
-      background: var(--theme);
-    }
+
+  .type .selectedView {
+    color: #FFFFFF;
+    background: var(--theme);
+  }
+
   .type__block3+.year__block4 {
     margin-top: 67px;
   }
@@ -2348,14 +2350,15 @@ h6 {
     }
 
     .smollImg {
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      // justify-content: space-between;
 
       .coverSmollImg {
         width: 94px;
+        height: 94px;
 
         img {
-          width: 100%;
+          width: 94px;
         }
       }
     }
@@ -2722,14 +2725,147 @@ h6 {
     //   opacity: 0;
     // }
   }
-  
+
 
   .dropdown__button--active {
     .dropdown__arrow {
       opacity: 0;
     }
   }
-  
+
+  .bigSlider {
+    width: 635px;
+    margin: -14px 0 0 0;
+
+    .slick-slider {}
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized {}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted {}
+
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+    }
+
+    /* Слайд */
+    .slick-slide {}
+
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active {}
+
+    /* Слайд основной */
+    .slick-slide.slick-current {}
+
+    /* Слайд по центру */
+    .slick-slide.slick-center {}
+
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned {}
+
+    /* Стрелка */
+    .slick-arrow {
+      // display: none;
+      font-size: 0;
+    }
+
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {}
+
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {}
+
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled {}
+
+    /* Точки (булиты) */
+    .slick-dots {}
+
+    .slick-dots li {}
+
+    /* Активная точка */
+    .slick-dots li.slick-active {}
+
+    /* Элемент точки */
+    .slick-dots li button {}
+  }
+
+  .littleSlider {
+    width: 635px;
+    margin: -29px 0 0 0;
+
+    // .smollImg{
+    //   min-width: 0;
+    //   height: 200px;
+    // }
+
+    /* Слайдер */
+    .slick-slider {}
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized {}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted {}
+
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+    }
+
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+    }
+
+    /* Слайд */
+    .slick-slide {}
+
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active {}
+
+    /* Слайд основной */
+    .slick-slide.slick-current {}
+
+    /* Слайд по центру */
+    .slick-slide.slick-center {}
+
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned {}
+
+    /* Стрелка */
+    .slick-arrow {
+      // display: none;
+      font-size: 0;
+    }
+
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {}
+
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {}
+
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled {}
+
+    /* Точки (булиты) */
+    .slick-dots {}
+
+    .slick-dots li {}
+
+    /* Активная точка */
+    .slick-dots li.slick-active {}
+
+    /* Элемент точки */
+    .slick-dots li button {}
+  }
 }
 
 // ============================================
@@ -3228,7 +3364,7 @@ li {
   .dropdown__input-hidden {
     display: none;
   }
-  
+
 }
 
 
@@ -3955,9 +4091,32 @@ h6.icon-pointsArrow::before {
     width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
   }
 
-  .main .product__block1 .smollImg .coverSmollImg {
-    width: calc(50px + (94 - 50) * ((100vw - 769px) / (1140 - 769)));
+  // .main .product__block1 .smollImg .coverSmollImg {
+  //   width: calc(50px + (94 - 50) * ((100vw - 769px) / (1140 - 769)));
+  // }
+  .main .littleSlider {
+    width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
+
+    .smollImg {
+      // display: flex;
+      // justify-content: space-between;
+
+      .coverSmollImg {
+        width: calc(51px + (94 - 51) * ((100vw - 769px) / (1140 - 769)));
+        height: 94px;
+
+        img {
+          width: calc(51px + (94 - 51) * ((100vw - 769px) / (1140 - 769)));
+        }
+      }
+    }
   }
+  .main .bigSlider {
+    width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
+
+    
+  }
+
 
   .main .product__block1 .right {
 
@@ -4037,6 +4196,30 @@ h6.icon-pointsArrow::before {
 
   .mobileHidden {
     display: none;
+  }
+
+  .main .littleSlider {
+    margin: -30px auto 0;
+    width: calc(335px + (335 - 335) * ((100vw - 360px) / (768 - 360)));
+    height: 57px;
+    .smollImg {
+      // display: flex;
+      // justify-content: space-between;
+
+      .coverSmollImg {
+        width: calc(51px + (51 - 51) * ((100vw - 360px) / (768 - 360)));
+        height: 94px;
+
+        img {
+          width: calc(51px + (51 - 51) * ((100vw - 360px) / (768 - 360)));
+        }
+      }
+    }
+  }
+  .main .bigSlider {
+    margin: 0 auto;
+    width: calc(335px + (335 - 335) * ((100vw - 360px) / (768 - 360)));
+
   }
 
   .main {
@@ -4670,13 +4853,13 @@ h6.icon-pointsArrow::before {
   }
 
   .main .product__block1 .smollImg {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
   }
 
-  .main .product__block1 .smollImg .coverSmollImg {
-    width: 50px;
-  }
+  // .main .product__block1 .smollImg .coverSmollImg {
+  //   width: 50px;
+  // }
 
   .main .product__block1 .right {
     margin: 50px -2px 0 0;
