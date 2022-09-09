@@ -1725,10 +1725,10 @@ h6 {
     //   color: #FFFFFF;
     //   background: #2B911A;
     // }
-    .selectedView {
-      color: #FFFFFF;
-      background: var(--theme);
-    }
+    // .selectedView {
+    //   color: #FFFFFF;
+    //   background: var(--theme);
+    // }
 
     .centrPoint {
       width: 4px;
@@ -1852,7 +1852,10 @@ h6 {
 
     }
   }
-
+.type .selectedView {
+      color: #FFFFFF;
+      background: var(--theme);
+    }
   .type__block3+.year__block4 {
     margin-top: 67px;
   }
@@ -3454,7 +3457,7 @@ h6.icon-pointsArrow::before {
 
 .showMore__productBtn {
   cursor: pointer;
-  margin: -27px auto 79px;
+  margin: 88px auto 79px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
@@ -3619,7 +3622,7 @@ h6.icon-pointsArrow::before {
 
   .select-box {
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     position: relative;
   }
