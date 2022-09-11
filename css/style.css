@@ -1126,6 +1126,10 @@ h6 {
   color: #FFFFFF;
   background: var(--theme);
 }
+.main .type .type__btn.selectedView:hover {
+  color: #FFFFFF;
+  background: #9a9a9a;
+}
 .main .type__block3 + .year__block4 {
   margin-top: 67px;
 }
