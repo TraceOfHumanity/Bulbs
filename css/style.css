@@ -762,21 +762,6 @@ h6 {
 .main .year__block3 .info__list {
   margin: 7px 0 0 0;
 }
-.main .year__block3 .type__btn {
-  cursor: pointer;
-  width: 184px;
-  padding: 13px 0 11px;
-  background: #C9C9C9;
-  border-radius: 10px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #434343;
-}
 .main .year__block3 .lamp {
   margin: 0px 0 31px 0;
   padding-top: 56px;
@@ -1026,22 +1011,6 @@ h6 {
   gap: 25px;
   margin: 0 0 65px -1px;
 }
-.main .type__block3 .type__btn {
-  cursor: pointer;
-  width: 184px;
-  height: 52px;
-  padding: 13px 0 12px;
-  background: #C9C9C9;
-  border-radius: 10px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #434343;
-}
 .main .type__block3 .centrPoint {
   width: 4px;
   position: absolute;
@@ -1113,6 +1082,22 @@ h6 {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+.main .type__btn {
+  cursor: pointer;
+  width: 184px;
+  height: 52px;
+  padding: 13px 0 12px;
+  background: #C9C9C9;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434343;
 }
 .main .type .selectedView {
   color: #FFFFFF;
@@ -3024,7 +3009,7 @@ h6.icon-pointsArrow::before {
     flex-wrap: wrap;
   }
 
-  .main .type__block3 .type__btn {
+  .main .type__btn {
     min-width: 99px;
     width: calc(99px + (175 - 99) * ((100vw - 360px) / (768 - 360)));
   }
