@@ -32,7 +32,7 @@ html.saddlebrown {
 }
 
 html.midnightblue {
-  --theme: #191970;
+  --theme: #185e8d;
 }
 
 * {
@@ -110,7 +110,6 @@ a:visited {
   text-decoration: none;
 }
 
-a,
 a:hover {
   text-decoration: none;
 }
@@ -516,7 +515,6 @@ h6 {
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
-  /* identical to box height */
   text-transform: uppercase;
   color: #434343;
 }
@@ -526,7 +524,6 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  /* or 175% */
   color: #434343;
   margin: 0 0 0 5px;
 }
@@ -537,7 +534,6 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: #434343;
 }
 .main .main__block2 .dropdown__title {
@@ -569,7 +565,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   text-align: center;
   color: #FFFFFF;
 }
@@ -742,7 +737,6 @@ h6 {
   color: #434343;
 }
 .main .year__block3 .title {
-  /* or 117% */
   font-size: 24px;
   color: #434343;
 }
@@ -981,7 +975,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: var(--theme);
 }
 .main .model__block3 {
@@ -1106,7 +1099,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   text-align: center;
   text-transform: uppercase;
   display: flex;
@@ -1292,7 +1284,6 @@ h6 {
   margin-bottom: 21px;
 }
 .main .about__block13 h6 {
-  /* or 140% */
   margin: 0px 0 17px 8px;
 }
 .main .about__block13 p {
@@ -1425,7 +1416,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   margin-bottom: 2px;
   color: #434343;
 }
@@ -1472,9 +1462,6 @@ h6 {
 .main .contact__form .midle__radios {
   display: flex;
   justify-content: space-between;
-  /* handle if you want label on the left of the checkmark instead */
-  /* label  */
-  /* checkmark */
 }
 .main .contact__form .midle__radios .radio__group {
   width: 265px;
@@ -1496,7 +1483,6 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: #434343;
 }
 .main .contact__form .midle__radios .custom-radio-btn input {
@@ -1520,7 +1506,6 @@ h6 {
   border-radius: 50%;
   display: inline-block;
   transition: opacity 0.3s ease;
-  /* changes from the video  */
   border: var(--border) solid #C2C2C2;
   padding: var(--gap);
   position: absolute;
@@ -1532,8 +1517,6 @@ h6 {
   right: 0;
 }
 .main .contact__form .midle__radios .custom-radio-btn input:checked ~ .checkmark {
-  /* changes from the video  */
-  /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
   background-origin: content-box;
   background-repeat: no-repeat;
   background-image: radial-gradient(circle at center, var(--theme) calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), rgba(255, 255, 255, 0) 0);
@@ -1548,7 +1531,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: #434343;
 }
 .main .contact__form .textarea__cover {
@@ -2048,6 +2030,13 @@ li {
   position: absolute;
   right: 24px;
   top: 20px;
+}
+.unique .dropdown__arrow.dropdown__arrow180 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .unique .dropdown__list {
   border: 1px solid #DFDFDF;
