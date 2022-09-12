@@ -955,10 +955,8 @@ h6 {
     line-height: 28px;
     margin: 12px 0px 0px 1px;
   }
-
-  .type__block3 {
-    margin: 15px 0 0 2px;
-
+  .lamp + .hidden {
+    border-top: 1px solid #C9C9C9;;
   }
 
   .type__btn {
@@ -1024,7 +1022,7 @@ h6 {
       position: relative;
     }
 
-    .image__block2 {
+    img {
       width: 100%;
       margin: -127px 0 0 0;
     }
@@ -1096,9 +1094,9 @@ h4 + p{
 ul + h6 {
   margin-top: 20px;
 }
-h6 + p {
-  margin-top: 17px;
-}
+// h6 + p {
+//   margin-top: 17px;
+// }
   .about__brends {
     margin: 42px 0 35px;
 
@@ -1166,20 +1164,8 @@ h6 + p {
     }
   }
 
-  .about__block10 {
-    margin-bottom: 44px;
-
-
-    .title {
-      /* or 140% */
-      margin: 0 0 17px 8px;
-
-    }
-
-
-    p {
-      margin: 0 0 0 2px;
-    }
+  .realProjects + .realProjects.active{
+margin-top: 23px;
   }
 
   .about__realProjects {
@@ -1262,14 +1248,6 @@ h6 + p {
     margin: 8px 0 0 0;
   }
 
-  .about__block13 {
-    margin-bottom: 21px;
-
-
-    h6 {
-
-      margin: 0px 0 17px 8px;
-    }
 
 
     p {
@@ -1340,33 +1318,11 @@ h6 + p {
     .card__text {
       margin: 16px 0 0 -1px;
     }
-  }
 
-  .about__block14 {
-    margin-bottom: 54px;
-
-
-    h6 {
-      margin: 0 0 28px 8px;
-
-    }
-
-
-    p {
-      padding: 0 6px 0px 2px;
-    }
-
-  }
-
-  .product__block1 {
+  .selectproduct__info {
     h1 {
       text-transform: none;
     }
-
-
-
-
-
 
     .product__mainInfo {
       display: flex;
@@ -2078,7 +2034,6 @@ li.icon-circles::before {
 }
 
 .crumbs .container {
-  margin-left: -1px;
   display: flex;
   margin-top: 0px;
   flex-wrap: wrap;
@@ -2363,15 +2318,14 @@ h6 {
   text-transform: none;
   color: #434343;
   // padding: 0 0 0 32px;
-
+margin-bottom: 20px;
 }
 
 h6.icon-pointsArrow::before {
   position: relative;
   font-size: 24px;
   padding: 0 8px 0 0;
-  margin-left: 0px;
-  margin-top: 3px;
+  top: 6px;
   left: 0;
 }
 
@@ -2771,14 +2725,20 @@ ol {
     width: calc(735px + (1090 - 735) * ((100vw - 769px) / (1140 - 769)));
     margin: 0 auto;
   }
-
-
-
+  .main .bg_car .coverForCar {
+    width: calc(735px + (1110 - 735) * ((100vw - 769px) / (1140 - 769)));
+    height: 247px;
+    overflow: hidden;
+    position: relative;
+}
+.main .bg_car img {
+  // width: 100%;
+  margin: calc(0px + (-127 - 0) * ((100vw - 769px) / (1140 - 769))) 0 0 0;
+}
   .main .main__block1 .block1__content-img {
     height: calc(168px + (249 - 168) * ((100vw - 769px) / (1140 - 769)));
     width: 398px;
   }
-
   .header__logo {
     margin-left: calc(7px + (0 - 0) * ((100vw - 769px) / (1140 - 769)));
   }
@@ -2818,7 +2778,7 @@ ol {
     margin: 6px 0px 16px;
   }
 
-  .main .about__block13 .team {
+  .main .about__team .team {
     justify-content: space-evenly;
   }
 
@@ -2905,7 +2865,7 @@ ol {
   }
 
 
-  .main .product__block1 .maipImg {
+  .main .selectproduct__info .maipImg {
     width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
   }
 
@@ -2932,14 +2892,14 @@ ol {
   }
 
 
-  .main .product__block1 .right {
+  .main .selectproduct__info .right {
 
     .dropdown {
       margin: 0 auto;
     }
   }
 
-  .main .product__block1 .left {
+  .main .selectproduct__info .left {
     margin-right: 10px;
   }
 
@@ -2970,6 +2930,42 @@ ol {
     width: 0px;
   }
 
+  .main .bg_car .coverForCar {
+    width: calc(335px + (748 - 335) * ((100vw - 360px) / (768 - 360)));
+    height: 182px;
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+.main .bg_car {
+  margin: 0px 0 36px 0px;
+  h3 {
+    padding: 0 0 0 32px;
+  }
+  
+  h3.icon-pointsArrow::before {
+    position: absolute;
+    // font-size: 24px;
+    padding: 0 8px 0 0;
+    margin-left: 0px;
+    margin-top: 3px;
+    left: 0;
+  }
+}
+.main .bg_car img {
+  width: 112%;
+  // height: 100%;
+  margin: calc(0px + (-100 - 0) * ((100vw - 360px) / (768 - 360))) 0 0 0;
+  // margin: calc(0px + (-127 - 0) * ((100vw - 360px) / (768 - 360))) 0 0 0;
+}
+.main .bg_car .publish {
+  bottom: 10px;
+  right: 10px;
+}
+.main .bg_car .publish h3 {
+  font-size: 16px;
+  line-height: 1.1;
+  padding-top: 8px;
+}
   header+.unique {
     margin-top: 41px;
   }
@@ -3540,32 +3536,32 @@ ol {
     width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
   }
 
-  .main .about__block13 {
+  .main .about__team {
     margin-bottom: 6px;
   }
 
-  .main .about__block13 .team {
+  .main .about__team .team {
     margin: 32px 0px 0 1px;
     justify-content: start;
   }
 
-  .main .about__block13 .team__card {
+  .main .about__team .team__card {
     margin: 0 0 10px 0;
   }
 
-  .main .about__block13 .person__img {
+  .main .about__team .person__img {
     width: 167px;
   }
 
-  .main .about__block13 .person__info {
+  .main .about__team .person__info {
     margin-left: 11px;
   }
 
-  .main .about__block13 .person__links {
+  .main .about__team .person__links {
     bottom: 0px;
   }
 
-  .main .about__block13 .card__text {
+  .main .about__team .card__text {
     margin: 25px 0 0 -1px;
   }
 
@@ -3577,24 +3573,24 @@ ol {
     margin: 0 0 13px 2px;
   }
 
-  .main .product__block1 .maipImg {
+  .main .selectproduct__info .maipImg {
     width: 335px;
     margin: 0 auto 11px auto;
   }
 
-  .main .product__block1 .product__mainInfo {
+  .main .selectproduct__info .product__mainInfo {
     margin: 23px 0 0 0;
     flex-direction: column;
   }
 
 
-  .main .product__block1 .right {
+  .main .selectproduct__info .right {
     margin: 50px -2px 0 0;
     width: 100%;
 
   }
 
-  .main .product__block1 .parTop {
+  .main .selectproduct__info .parTop {
     margin: 36px 0 13px 0;
   }
 
