@@ -861,28 +861,29 @@ h6 {
 .main .about__block1 .paragraf {
   margin: 0 0 28px 2px;
 }
-.main .about__block2 {
-  margin: 33px 0 57px 1px;
+.main .bg_car {
+  margin: 33px 0 59px 0px;
 }
-.main .about__block2 .container {
-  position: relative;
-  background: url(../img/Rectangle\ 41.jpg);
-  background-size: cover;
+.main .bg_car .coverForCar {
+  width: 1100px;
   height: 247px;
-  background-repeat: no-repeat;
-  background-position: center;
+  overflow: hidden;
+  position: relative;
 }
-.main .about__block2 .image__block2 {
+.main .bg_car .image__block2 {
   width: 100%;
+  margin: -127px 0 0 0;
 }
-.main .about__block2 .publish {
+.main .bg_car .publish {
+  position: absolute;
+  bottom: 22px;
+  right: 13px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   height: 100%;
-  padding: 0 21px 21px 0;
 }
-.main .about__block2 .publish h3 {
+.main .bg_car .publish h3 {
   border-top: 1px solid #C9C9C9;
   font-size: 20px;
   line-height: 1;
@@ -890,9 +891,18 @@ h6 {
   color: #FFFFFF;
   padding-top: 10px;
 }
-.main .about__block2 .publish h3.icon-pointsArrow:before {
+.main .bg_car .publish h3.icon-pointsArrow:before {
   font-size: 20px;
   margin: 0 0px 0 6px;
+}
+.main h3 + p {
+  margin-top: 16px;
+}
+.main p + h4 {
+  margin-top: 47px;
+}
+.main h4 + p {
+  margin-top: 16px;
 }
 .main .about__block3 {
   margin-bottom: 47px;
@@ -912,16 +922,22 @@ h6 {
 .main .about__block4 .title {
   margin: 0 0 17px 1px;
 }
-.main .about__block5 {
-  margin: 30px 0 35px;
+.main ul + h6 {
+  margin-top: 20px;
 }
-.main .about__block5 .container {
+.main h6 + p {
+  margin-top: 17px;
+}
+.main .about__brends {
+  margin: 42px 0 35px;
+}
+.main .about__brends .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
-.main .about__block5 .coverImg {
+.main .about__brends .coverImg {
   max-height: 110px;
   display: flex;
   justify-content: center;
@@ -962,38 +978,38 @@ h6 {
 .main .about__block10 p {
   margin: 0 0 0 2px;
 }
-.main .about__block11 {
+.main .about__realProjects {
   background: url(../img/image\ 21.jpg);
   background-size: cover;
   padding: 32px 0 28px;
   margin-bottom: 52px;
 }
-.main .about__block11 h6 {
+.main .about__realProjects h6 {
   /* or 140% */
   margin: 0 0 20px 8px;
 }
-.main .about__block11 .show__more-btn {
+.main .about__realProjects .show__more-btn {
   cursor: pointer;
   text-transform: uppercase;
   display: flex;
   justify-content: end;
   margin: 39px 0 -8px 0;
 }
-.main .about__block11 .show__more-btn .icon-pointsArrow::before {
+.main .about__realProjects .show__more-btn .icon-pointsArrow::before {
   margin: 0 -2px 0 12px;
 }
-.main .about__block11 .example {
+.main .about__realProjects .example {
   width: 255px;
 }
-.main .about__block11 .example h6 {
+.main .about__realProjects .example h6 {
   /* or 140% */
   margin: 7px 0 0 1px;
   padding: 0;
 }
-.main .about__block11 .example__img {
+.main .about__realProjects .example__img {
   min-width: 100%;
 }
-.main .about__block11 .example__img img {
+.main .about__realProjects .example__img img {
   width: 100%;
 }
 .main .type + .product {
@@ -2400,13 +2416,13 @@ ol li::before {
   }
 }
 @media (max-width: 1000px) {
-  .main .about__block5 .container {
+  .main .about__brends .container {
     justify-content: space-around;
     align-items: center;
   }
 }
 @media (max-width: 860px) {
-  .main .about__block11 .example {
+  .main .about__realProjects .example {
     width: 49%;
   }
 }
@@ -2870,14 +2886,14 @@ ol li::before {
     margin: 0 0 14px 1px;
   }
 
-  .main .about__block5 {
+  .main .about__brends {
     margin: 30px 0 17px;
   }
-  .main .about__block5 .brends {
+  .main .about__brends .brends {
     max-width: 100%;
     max-height: 100%;
   }
-  .main .about__block5 .coverImg {
+  .main .about__brends .coverImg {
     max-height: 110px;
     width: 50%;
   }
@@ -2896,21 +2912,21 @@ ol li::before {
     gap: 23px;
   }
 
-  .main .about__block11 {
+  .main .about__realProjects {
     padding: 32px 0 67px;
     margin-bottom: 44px;
   }
 
-  .main .about__block11 .example h6 {
+  .main .about__realProjects .example h6 {
     margin: 10px 0 0 18px;
   }
 
-  .main .about__block11 .example {
+  .main .about__realProjects .example {
     display: flex;
     width: 100%;
   }
 
-  .main .about__block11 .example__img {
+  .main .about__realProjects .example__img {
     min-width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
     width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
   }

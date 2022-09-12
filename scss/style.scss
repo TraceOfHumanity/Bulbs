@@ -847,6 +847,7 @@ h6 {
       -o-transition: all 0.2s ease-in-out;
     }
   }
+
   .car__search {
     margin: 0 0 32px 0;
 
@@ -898,62 +899,62 @@ h6 {
     }
   }
 
-  
 
-    .searhYear {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 39px;
+
+  .searhYear {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 39px;
+  }
+
+  .searcYearBtn {
+    width: 335px;
+    display: flex;
+    border-bottom: 1px solid #C9C9C9;
+    padding-bottom: 24px;
+    margin-left: 7px;
+    margin-bottom: 31px;
+
+    .moreInfo {
+
+      margin: 0;
+
     }
+  }
 
-    .searcYearBtn {
-      width: 335px;
-      display: flex;
-      border-bottom: 1px solid #C9C9C9;
-      padding-bottom: 24px;
-      margin-left: 7px;
-      margin-bottom: 31px;
-
-      .moreInfo {
-
-        margin: 0;
-
-      }
-    }
-
-    .rightColomn {
-      display: flex;
-      justify-content: start;
-      flex-direction: column;
-      margin-left: 30px;
-      margin-top: -2px;
-    }
+  .rightColomn {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: -2px;
+  }
 
 
 
-    .moreInfoThem {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 28px;
-      color: var(--theme);
-    }
+  .moreInfoThem {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--theme);
+  }
 
   // .model__block3 {
   //   margin: 52px 0px 32px 22px;
   // }
 
-  
 
 
 
-    .sybtitle {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      margin: 12px 0px 0px 1px;
-    }
+
+  .sybtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 12px 0px 0px 1px;
+  }
 
   .type__block3 {
     margin: 15px 0 0 2px;
@@ -1005,28 +1006,38 @@ h6 {
     }
   }
 
-  .about__block2 {
-    margin: 33px 0 57px 1px;
+  .bg_car {
+    margin: 33px 0 59px 0px;
 
-    .container {
-      position: relative;
-      background: url(../img/Rectangle\ 41.jpg);
-      background-size: cover;
+    // .container {
+    //   position: relative;
+    //   background: url(../img/Rectangle\ 41.jpg);
+    //   background-size: cover;
+    //   height: 247px;
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    // }
+    .coverForCar {
+      width: 1100px;
       height: 247px;
-      background-repeat: no-repeat;
-      background-position: center;
+      overflow: hidden;
+      position: relative;
     }
 
     .image__block2 {
       width: 100%;
+      margin: -127px 0 0 0;
     }
 
     .publish {
+      position: absolute;
+      bottom: 22px;
+      right: 13px;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
       height: 100%;
-      padding: 0 21px 21px 0;
+
 
       h3 {
         border-top: 1px solid #C9C9C9;
@@ -1046,7 +1057,15 @@ h6 {
 
 
   }
-
+h3 + p{
+  margin-top: 16px;
+}
+p + h4{
+  margin-top: 47px;
+}
+h4 + p{
+  margin-top: 16px;
+}
   .about__block3 {
     margin-bottom: 47px;
 
@@ -1074,9 +1093,14 @@ h6 {
 
 
   }
-
-  .about__block5 {
-    margin: 30px 0 35px;
+ul + h6 {
+  margin-top: 20px;
+}
+h6 + p {
+  margin-top: 17px;
+}
+  .about__brends {
+    margin: 42px 0 35px;
 
     .container {
       display: flex;
@@ -1158,7 +1182,7 @@ h6 {
     }
   }
 
-  .about__block11 {
+  .about__realProjects {
     background: url(../img/image\ 21.jpg);
     background-size: cover;
     padding: 32px 0 28px;
@@ -1208,12 +1232,15 @@ h6 {
 
 
   }
-.type + .product{
-  margin-top: 65px;
-}
-.product a h3 {
-  font-size: 28px;
-}
+
+  .type+.product {
+    margin-top: 65px;
+  }
+
+  .product a h3 {
+    font-size: 28px;
+  }
+
   .about__block12 {
     margin-bottom: 38px;
 
@@ -1230,9 +1257,11 @@ h6 {
       margin: 0 0 0px 2px;
     }
   }
-  a + .productDrop {
+
+  a+.productDrop {
     margin: 8px 0 0 0;
   }
+
   .about__block13 {
     margin-bottom: 21px;
 
@@ -2917,14 +2946,14 @@ ol {
 }
 
 @media (max-width: 1000px) {
-  .main .about__block5 .container {
+  .main .about__brends .container {
     justify-content: space-around;
     align-items: center;
   }
 }
 
 @media (max-width: 860px) {
-  .main .about__block11 .example {
+  .main .about__realProjects .example {
     width: 49%;
   }
 }
@@ -2965,7 +2994,8 @@ ol {
     flex-direction: column;
     margin: 0 0 0 2px;
     gap: 24px;
-}
+  }
+
   header+h1 {
     margin-top: 58px;
   }
@@ -2977,9 +3007,11 @@ ol {
   .showMore__productBtn {
     margin: 44px auto 79px;
   }
-  .main .type + .product {
+
+  .main .type+.product {
     margin-top: 45px;
-}
+  }
+
   .header__logo {
     margin-left: calc(-9px + (0 - 9) * ((100vw - 360px) / (768 - 360)));
   }
@@ -3150,24 +3182,31 @@ ol {
     //   margin: 38px 0px 31px calc(153px + (940 - 153) * ((100vw - 360px) / (1140 - 360)));
     // }
   }
-  .main div + form {
+
+  .main div+form {
     margin-top: 56px;
-}
-.main form + div {
-  margin-top: 56px;
-}
-.main form .dropdown__title {
-  margin-bottom: 4px;
-}
+  }
+
+  .main form+div {
+    margin-top: 56px;
+  }
+
+  .main form .dropdown__title {
+    margin-bottom: 4px;
+  }
+
   .main .choosePosition+div {
     margin-top: 40px;
   }
+
   .main .btn__go {
     margin: 38px auto 16px;
-}
-.main form {
-  padding: 36px 0 16px;
-}
+  }
+
+  .main form {
+    padding: 36px 0 16px;
+  }
+
   .search__make {
     flex-direction: column;
   }
@@ -3449,7 +3488,7 @@ ol {
     margin: 0 0 14px 1px;
   }
 
-  .main .about__block5 {
+  .main .about__brends {
     margin: 30px 0 17px;
 
 
@@ -3482,21 +3521,21 @@ ol {
     gap: 23px;
   }
 
-  .main .about__block11 {
+  .main .about__realProjects {
     padding: 32px 0 67px;
     margin-bottom: 44px;
   }
 
-  .main .about__block11 .example h6 {
+  .main .about__realProjects .example h6 {
     margin: 10px 0 0 18px;
   }
 
-  .main .about__block11 .example {
+  .main .about__realProjects .example {
     display: flex;
     width: 100%;
   }
 
-  .main .about__block11 .example__img {
+  .main .about__realProjects .example__img {
     min-width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
     width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
   }
