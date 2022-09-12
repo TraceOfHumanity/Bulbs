@@ -1,29 +1,35 @@
-let coll = document.getElementsByClassName('show__more-btn');
+let coll = document.getElementsByClassName('show__more');
 for (let i = 0; i < coll.length; i++) {
   coll[i].addEventListener('click', function () {
     this.previousElementSibling.classList.toggle('active');
+    this.classList.toggle('hidden');
     let content = this.previousElementSibling;
-    if (content.style.display) {
-      content.style.display = none;
+    if (content.classList.contains('active')) {
+      coll.textContent = 'More'
+    } else {
+      coll.textContent = 'Less';
     }
-    else {
-      content.style.display = block;
-    }
+    // if (content.style.display) {
+    //   content.style.display = none;
+    // }
+    // else {
+    //   content.style.display = block;
+    // }
   })
 };
-let coll2 = document.getElementsByClassName('show__more');
-for (let i = 0; i < coll2.length; i++) {
-  coll2[i].addEventListener('click', function () {
-    this.previousElementSibling.classList.toggle('active');
-    let content = this.previousElementSibling;
-    if (content.style.display) {
-      content.style.display = none;
-    }
-    else {
-      content.style.display = block;
-    }
-  })
-};
+// let coll2 = document.getElementsByClassName('show__more');
+// for (let i = 0; i < coll2.length; i++) {
+//   coll2[i].addEventListener('click', function () {
+//     this.previousElementSibling.classList.toggle('active');
+//     let content = this.previousElementSibling;
+//     if (content.style.display) {
+//       content.style.display = none;
+//     }
+//     else {
+//       content.style.display = block;
+//     }
+//   })
+// };
 let coll3 = document.getElementsByClassName('showMore__productBtn');
 for (let i = 0; i < coll3.length; i++) {
   coll3[i].addEventListener('click', function () {
