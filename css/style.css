@@ -970,18 +970,15 @@ h6 {
   padding: 32px 0 28px;
   margin-bottom: 52px;
 }
+.main .about__realProjects .show__more {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .about__realProjects .show__more.hidden {
+  display: none;
+}
 .main .about__realProjects h6 {
   margin: 0 0 20px 8px;
-}
-.main .about__realProjects .show__more-btn {
-  cursor: pointer;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: end;
-  margin: 39px 0 -8px 0;
-}
-.main .about__realProjects .show__more-btn .icon-pointsArrow::before {
-  margin: 0 -2px 0 12px;
 }
 .main .about__realProjects .example {
   width: 255px;

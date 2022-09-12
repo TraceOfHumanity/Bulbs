@@ -1175,26 +1175,16 @@ h6 {
     background-size: cover;
     padding: 32px 0 28px;
     margin-bottom: 52px;
-
+    .show__more{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .show__more.hidden{
+      display: none;
+    }
 
     h6 {
       margin: 0 0 20px 8px;
-
-    }
-
-
-
-
-    .show__more-btn {
-      cursor: pointer;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: end;
-      margin: 39px 0 -8px 0;
-
-      .icon-pointsArrow::before {
-        margin: 0 -2px 0 12px;
-      }
 
     }
 
@@ -1215,8 +1205,6 @@ h6 {
         width: 100%;
       }
     }
-
-
   }
 
   .type+.product {
