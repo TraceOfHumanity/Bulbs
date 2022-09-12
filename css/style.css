@@ -2613,7 +2613,7 @@ ol li::before {
     flex-direction: column;
   }
 
-  .make__colon {
+  .main .make__colon {
     width: 100%;
     margin: 0 0 0 0px;
     gap: 52px;
