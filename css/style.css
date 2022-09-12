@@ -2796,7 +2796,7 @@ ol li::before {
     margin: -1px 0 23px 3px;
   }
 
-  .main .year__block5 .yearsBtn {
+  .main .yearsBtn {
     gap: 16px 23px;
     justify-content: center;
   }
