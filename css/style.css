@@ -732,7 +732,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /*or156%*/
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -776,7 +775,6 @@ h6 {
   line-height: 45px;
   margin-bottom: 11px;
   display: inline-block;
-  /*or117%*/
   color: #434343;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -949,7 +947,6 @@ h6 {
   margin: 0 0 47px 0;
 }
 .main .about__block8 .title {
-  /* or 140% */
   margin: 0 0 17px 8px;
 }
 .main .about__block8 .paragraf {
@@ -959,7 +956,6 @@ h6 {
   margin: 0 0 30px 0;
 }
 .main .about__block9 .title {
-  /* or 140% */
   margin: 0 0 18px 8px;
 }
 .main .about__block9 p {
@@ -975,7 +971,6 @@ h6 {
   margin-bottom: 52px;
 }
 .main .about__realProjects h6 {
-  /* or 140% */
   margin: 0 0 20px 8px;
 }
 .main .about__realProjects .show__more-btn {
@@ -992,7 +987,6 @@ h6 {
   width: 255px;
 }
 .main .about__realProjects .example h6 {
-  /* or 140% */
   margin: 7px 0 0 1px;
   padding: 0;
 }
@@ -1012,7 +1006,6 @@ h6 {
   margin-bottom: 38px;
 }
 .main .about__block12 h6 {
-  /* or 140% */
   margin: 0 0px 17px 8px;
 }
 .main .about__block12 p {
@@ -1053,7 +1046,6 @@ h6 {
   padding: 0;
   margin: 0 0 0 0;
   font-weight: 500;
-  /* or 140% */
 }
 .main .person__links {
   position: absolute;
@@ -1294,7 +1286,6 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  /*or156%*/
   width: 184px;
   background-color: var(--theme);
   padding: 13px 12px 11px;
@@ -1332,22 +1323,6 @@ h6 {
 .main .bigSlider {
   width: 635px;
   margin: -14px 0 0 0;
-  /* Слайдер запущен */
-  /* Слайдер с точками */
-  /* Ограничивающая оболочка */
-  /* Лента слайдов */
-  /* Слайд */
-  /* Слайд активный (показывается) */
-  /* Слайд основной */
-  /* Слайд по центру */
-  /* Клонированный слайд */
-  /* Стрелка */
-  /* Стрелка влево */
-  /* Стрелка вправо */
-  /* Стрелка не активная */
-  /* Точки (булиты) */
-  /* Активная точка */
-  /* Элемент точки */
 }
 .main .bigSlider .slick-list {
   overflow: hidden;
@@ -1361,23 +1336,6 @@ h6 {
 .main .littleSlider {
   width: 635px;
   margin: -29px 0 0 0;
-  /* Слайдер */
-  /* Слайдер запущен */
-  /* Слайдер с точками */
-  /* Ограничивающая оболочка */
-  /* Лента слайдов */
-  /* Слайд */
-  /* Слайд активный (показывается) */
-  /* Слайд основной */
-  /* Слайд по центру */
-  /* Клонированный слайд */
-  /* Стрелка */
-  /* Стрелка влево */
-  /* Стрелка вправо */
-  /* Стрелка не активная */
-  /* Точки (булиты) */
-  /* Активная точка */
-  /* Элемент точки */
 }
 .main .littleSlider .slick-list {
   overflow: hidden;
@@ -1414,7 +1372,6 @@ li {
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-  /* or 156% */
   color: #434343;
 }
 
@@ -2024,7 +1981,6 @@ ol li::before {
   font-weight: 400;
   font-size: 18px;
   line-height: 40px;
-  /* or 222% */
   color: var(--theme);
 }
 
@@ -2422,8 +2378,6 @@ ol li::before {
   .main .bg_car .coverForCar {
     width: calc(335px + (748 - 335) * ((100vw - 360px) / (768 - 360)));
     height: 182px;
-    /* overflow: hidden; */
-    /* position: relative; */
   }
 
   .main .bg_car {
