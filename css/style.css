@@ -1189,10 +1189,10 @@ h6 {
   margin: 0 -10px 0 0px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 23px;
+  column-gap: 10px;
 }
 .main .contact__form .midle__radios .custom-radio-btn {
-  width: 260px;
+  width: 270px;
   --size: 16px;
   min-width: var(--size);
   height: var(--size);
