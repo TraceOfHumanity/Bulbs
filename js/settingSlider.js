@@ -11,7 +11,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     asNavFor: '.smollImg',
     focusOnSelect: true,
-    speed: 200,
+    speed: 300,
     
   });
 });

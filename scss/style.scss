@@ -1201,7 +1201,7 @@ h6 {
     .example__img {
       width: 255px;
       height: 156px;
-      overflow-x: hidden;
+      overflow: hidden;
       text-align: center;
 
       img {
@@ -2862,7 +2862,7 @@ ol {
 
 
   .main .selectproduct__info .maipImg {
-    width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
+    height: calc(230px + (377 - 230) * ((100vw - 769px) / (1140 - 769)));
   }
 
   .main .littleSlider {
@@ -2883,10 +2883,12 @@ ol {
 
   .main .bigSlider {
     width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
-
+    height: calc(270px + (432 - 270) * ((100vw - 769px) / (1140 - 769)));;
 
   }
-
+.main .selectproduct__info .smollImg .coverSmollImg img {
+    max-width: 100%; 
+}
 
   .main .selectproduct__info .right {
 
@@ -3057,9 +3059,9 @@ ol {
   }
 
   .main .bigSlider {
-    margin: 0 auto;
+    margin: -14px auto 0;
     width: calc(335px + (335 - 335) * ((100vw - 360px) / (768 - 360)));
-
+    height: 245px;
   }
 
   .main {
@@ -3533,7 +3535,8 @@ ol {
 
   .main .about__realProjects .example__img {
     // min-width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
-    width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
+    width: calc(222px + (255 - 222) * ((100vw - 360px) / (768 - 360)));
+    height: calc(77px + (156 - 77) * ((100vw - 360px) / (768 - 360)));
   }
 
   .main .about__team {
@@ -3574,7 +3577,7 @@ ol {
   }
 
   .main .selectproduct__info .maipImg {
-    width: 335px;
+    height: 201px;
     margin: 0 auto 11px auto;
   }
 

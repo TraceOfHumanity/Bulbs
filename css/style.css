@@ -987,7 +987,7 @@ h6 {
 .main .about__realProjects .example__img {
   width: 255px;
   height: 156px;
-  overflow-x: hidden;
+  overflow: hidden;
   text-align: center;
 }
 .main .about__realProjects .example__img img {
@@ -2362,7 +2362,7 @@ ol li::before {
   }
 
   .main .selectproduct__info .maipImg {
-    width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
+    height: calc(230px + (377 - 230) * ((100vw - 769px) / (1140 - 769)));
   }
 
   .main .littleSlider {
@@ -2375,6 +2375,11 @@ ol li::before {
 
   .main .bigSlider {
     width: calc(335px + (635 - 335) * ((100vw - 769px) / (1140 - 769)));
+    height: calc(270px + (432 - 270) * ((100vw - 769px) / (1140 - 769)));
+  }
+
+  .main .selectproduct__info .smollImg .coverSmollImg img {
+    max-width: 100%;
   }
 
   .main .selectproduct__info .right .dropdown {
@@ -2531,8 +2536,9 @@ ol li::before {
   }
 
   .main .bigSlider {
-    margin: 0 auto;
+    margin: -14px auto 0;
     width: calc(335px + (335 - 335) * ((100vw - 360px) / (768 - 360)));
+    height: 245px;
   }
 
   .main .main__block1 .block1__content {
@@ -2945,7 +2951,8 @@ ol li::before {
   }
 
   .main .about__realProjects .example__img {
-    width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
+    width: calc(222px + (255 - 222) * ((100vw - 360px) / (768 - 360)));
+    height: calc(77px + (156 - 77) * ((100vw - 360px) / (768 - 360)));
   }
 
   .main .about__team {
@@ -2986,7 +2993,7 @@ ol li::before {
   }
 
   .main .selectproduct__info .maipImg {
-    width: 335px;
+    height: 201px;
     margin: 0 auto 11px auto;
   }
 
