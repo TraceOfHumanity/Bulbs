@@ -584,9 +584,11 @@ h6 {
   .search__make {
     display: flex;
   }
-.ACURARDX{
-  margin-top: 34px;
-}
+
+  .ACURARDX {
+    margin-top: 34px;
+  }
+
   .make__colon {
     display: flex;
     width: 100%;
@@ -1266,7 +1268,7 @@ h6 {
   .person__img {
     // width: 190px;
     max-width: none;
-    
+
   }
 
   .person__info {
@@ -1324,11 +1326,16 @@ h6 {
 
     .maipImg {
       width: 635px;
+      height: 377px;
       margin: 0 0 20px 0;
       padding: 6px 0 0 0;
+      text-align: center;
 
       img {
-        width: 100%;
+        // width: 100%;
+        max-width: none;
+        height: 100%;
+        overflow: hidden;
       }
     }
 
@@ -1336,10 +1343,13 @@ h6 {
 
       .coverSmollImg {
         width: 94px;
-        height: 94px;
+        height: 79px;
+        overflow: hidden;
 
         img {
-          width: 94px;
+          max-width: none;
+
+          // width: 94px;
         }
       }
     }
@@ -1551,7 +1561,7 @@ h6 {
     }
 
     .textarea__cover {
-      ::-webkit-scrollbar{
+      ::-webkit-scrollbar {
         display: none;
       }
     }
@@ -1578,9 +1588,9 @@ h6 {
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
       cursor: text;
-      
+
     }
-    
+
 
     .formBtn {
       display: flex;
@@ -1641,8 +1651,9 @@ h6 {
 
   .bigSlider {
     width: 635px;
+    height: 432px;
     margin: -14px 0 0 0;
-
+overflow: hidden;
 
 
 
@@ -2376,10 +2387,12 @@ ol {
 .active {
   display: block;
 }
-.showMore__productBtn{
+
+.showMore__productBtn {
   border-top: 1px solid #C9C9C9;
 }
-.showMore__productBtn span{
+
+.showMore__productBtn span {
   cursor: pointer;
   margin: 88px auto 79px;
   font-weight: 500;
@@ -2862,7 +2875,7 @@ ol {
         height: 94px;
 
         img {
-          width: calc(51px + (94 - 51) * ((100vw - 769px) / (1140 - 769)));
+          // width: calc(51px + (94 - 51) * ((100vw - 769px) / (1140 - 769)));
         }
       }
     }
@@ -2912,12 +2925,14 @@ ol {
   ::-webkit-scrollbar {
     width: 0px;
   }
+
   .icon-lamp::before {
     position: absolute;
     top: -9px;
     left: 6px;
     font-size: 29px;
-}
+  }
+
   .main .bg_car .coverForCar {
     width: calc(335px + (748 - 335) * ((100vw - 360px) / (768 - 360)));
     height: 182px;
@@ -3347,10 +3362,13 @@ ol {
     margin: -53px 0 22px 147px;
     font-size: 20px;
   }
-.lamp:nth-last-child(1){
-  padding-bottom: 20px;
-  border-bottom: 1px solid #C9C9C9;;
-}
+
+  .lamp:nth-last-child(1) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C9C9C9;
+    ;
+  }
+
   .status {
     position: absolute;
     margin-top: -7px;

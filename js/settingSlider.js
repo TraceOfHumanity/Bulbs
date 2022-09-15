@@ -2,11 +2,16 @@ $(document).ready(function(){
   $('.smollImg').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    asNavFor: '.bigSlider'
+    asNavFor: '.bigSlider',
+    focusOnSelect: true,
+    // centerMode: true,
   });
   $('.bigSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.smollImg'
+    asNavFor: '.smollImg',
+    focusOnSelect: true,
+    speed: 200,
+    
   });
 });
