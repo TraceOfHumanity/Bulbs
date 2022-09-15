@@ -1017,6 +1017,8 @@ h6 {
     img {
       width: 100%;
       margin: -127px 0 0 0;
+      max-width: none;
+      max-height: none;
     }
 
     .publish {
@@ -1195,10 +1197,13 @@ h6 {
     }
 
     .example__img {
-      min-width: 100%;
+      width: 255px;
+      height: 156px;
+      overflow-x: hidden;
+      text-align: center;
 
       img {
-        width: 100%;
+        max-width: none;
       }
     }
   }
@@ -1253,10 +1258,15 @@ h6 {
 
   .person {
     width: 190px;
+    height: 156px;
+    min-width: 190px;
+    overflow: hidden;
   }
 
   .person__img {
-    width: 190px;
+    // width: 190px;
+    max-width: none;
+    
   }
 
   .person__info {
@@ -1413,7 +1423,8 @@ h6 {
 
     }
 
-    .input:focus-within {
+    .input:focus-within,
+    .textarea:focus-within {
       background-color: #ffffff;
       box-shadow: 0px 0px 10px 1px #ababab;
     }
@@ -1450,11 +1461,15 @@ h6 {
       justify-content: space-between;
 
       .radio__group {
-        width: 265px;
+        width: 100%;
         margin: 0 -10px 0 0px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 23px;
       }
 
       .custom-radio-btn {
+        width: 260px;
         --size: 16px;
         min-width: var(--size);
         height: var(--size);
@@ -1536,6 +1551,21 @@ h6 {
     }
 
     .textarea__cover {
+      ::-webkit-scrollbar{
+        display: none;
+      }
+    }
+
+    .textarea {
+      resize: none;
+      outline: none;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 20px;
+      color: #000000;
       background-color: #FFFFFF;
       border: 1px solid #C2C2C2;
       padding: 10px 3px 10px 10px;
@@ -1548,21 +1578,9 @@ h6 {
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
       cursor: text;
+      
     }
-
-    .textarea {
-      width: 100%;
-      height: 100%;
-      resize: none;
-      outline: none;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      margin-bottom: 20px;
-      color: #000000;
-    }
+    
 
     .formBtn {
       display: flex;
@@ -2207,12 +2225,12 @@ h3 {
 }
 
 h3.icon-pointsArrow::before {
-  position: relative;
+  position: absolute;
   font-size: 24px;
   // padding: 0 8px 0 0;
   margin-left: 0px;
   margin-top: 3px;
-  padding-left: 32px;
+  // padding-left: 32px;
   left: 0;
 }
 
@@ -2224,16 +2242,17 @@ h4 {
   font-size: 24px;
   line-height: 28px;
   text-transform: none;
+  padding-left: 32px;
   color: #434343;
 
 }
 
 h4.icon-pointsArrow::before {
-  position: relative;
+  position: absolute;
   font-size: 24px;
   padding: 0 8px 0 0;
   margin-left: 0px;
-  margin-top: 3px;
+  margin-top: 7px;
   left: 0;
 }
 
@@ -2251,7 +2270,7 @@ h5 {
 }
 
 h5.icon-pointsArrow::before {
-  position: relative;
+  position: absolute;
   font-size: 24px;
   padding: 0 8px 0 0;
   margin-left: 0px;
@@ -2268,14 +2287,15 @@ h6 {
   line-height: 28px;
   text-transform: none;
   color: #434343;
+  padding-left: 32px;
   margin-bottom: 20px;
 }
 
 h6.icon-pointsArrow::before {
-  position: relative;
+  position: absolute;
   font-size: 24px;
   padding: 0 8px 0 0;
-  top: 6px;
+  top: 4px;
   left: 0;
 }
 
@@ -2929,6 +2949,8 @@ ol {
 
   .main .bg_car img {
     width: 112%;
+    max-width: none;
+    max-height: none;
     margin: calc(0px + (-100 - 0) * ((100vw - 360px) / (768 - 360))) 0 0 0;
   }
 
@@ -3231,7 +3253,7 @@ ol {
     width: calc(312px + (730 - 312) * ((100vw - 360px) / (768 - 360)));
   }
 
-  .main .contact__form .textarea__cover {
+  .main .contact__form .textarea {
     height: 337px;
   }
 
@@ -3492,7 +3514,7 @@ ol {
   }
 
   .main .about__realProjects .example__img {
-    min-width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
+    // min-width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
     width: calc(125px + (200 - 125) * ((100vw - 360px) / (768 - 360)));
   }
 
