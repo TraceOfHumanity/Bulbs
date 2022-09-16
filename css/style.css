@@ -699,10 +699,6 @@ h6 {
   margin: 0px 0 0 3px;
   color: #434343;
 }
-.main p + ul,
-.main p + ol {
-  margin-left: 58px;
-}
 .main ul + p,
 .main ol + p {
   margin-top: 28px;
@@ -1409,6 +1405,16 @@ li {
   margin: 0 0 0 13px;
 }
 
+ol,
+ul {
+  margin-left: 58px;
+}
+
+.product ol,
+.product ul {
+  margin-left: 0px;
+}
+
 .icon-circles {
   position: relative;
 }
@@ -1781,8 +1787,11 @@ h1 {
   line-height: 38px;
   text-transform: uppercase;
   color: #434343;
-  padding-left: 32px;
   margin-bottom: 20px;
+}
+
+h1.icon-pointsArrow {
+  padding-left: 32px;
 }
 
 h1.icon-pointsArrow::before {
@@ -1801,8 +1810,11 @@ h2 {
   line-height: 33px;
   text-transform: none;
   color: #434343;
-  padding-left: 32px;
   margin: 0 0 28px 0;
+}
+
+h2.icon-pointsArrow {
+  padding-left: 32px;
 }
 
 h2.icon-pointsArrow::before {
@@ -1820,8 +1832,11 @@ h3 {
   font-size: 28px;
   line-height: 28px;
   text-transform: none;
-  padding-left: 32px;
   color: #434343;
+}
+
+h3.icon-pointsArrow {
+  padding-left: 32px;
 }
 
 h3.icon-pointsArrow::before {
@@ -1844,6 +1859,10 @@ h4 {
   color: #434343;
 }
 
+h4.icon-pointsArrow {
+  padding-left: 32px;
+}
+
 h4.icon-pointsArrow::before {
   position: absolute;
   font-size: 24px;
@@ -1864,6 +1883,10 @@ h5 {
   color: #434343;
 }
 
+h5.icon-pointsArrow {
+  padding-left: 32px;
+}
+
 h5.icon-pointsArrow::before {
   position: absolute;
   font-size: 24px;
@@ -1882,7 +1905,6 @@ h6 {
   line-height: 28px;
   text-transform: none;
   color: #434343;
-  padding-left: 32px;
   margin-bottom: 20px;
 }
 
@@ -1892,6 +1914,10 @@ h6.icon-pointsArrow::before {
   padding: 0 8px 0 0;
   top: 4px;
   left: 0;
+}
+
+h6.icon-pointsArrow {
+  padding-left: 32px;
 }
 
 .productDrop {
@@ -2712,11 +2738,6 @@ ol li::before {
     line-height: 25px;
   }
 
-  .main p + ul,
-  .main p + ol {
-    margin-left: 12px;
-  }
-
   .main .contact__form {
     margin: 35px 0 64px 0;
   }
@@ -2811,11 +2832,6 @@ ol li::before {
     width: 189px;
     margin: -53px 0 22px 147px;
     font-size: 20px;
-  }
-
-  .lamp:nth-last-child(1) {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #C9C9C9;
   }
 
   .status {
