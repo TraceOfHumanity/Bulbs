@@ -167,11 +167,7 @@ h6 {
 
 // /reset =========================================================================
 
-.selected1 {
-  .radio {
-    display: none;
-  }
-}
+
 
 // header style ===================================================================
 .header {
@@ -975,10 +971,10 @@ h6 {
     background: var(--theme);
   }
 
-  .type .type__btn.selectedView:hover {
-    color: #FFFFFF;
-    background: #9a9a9a;
-  }
+  // .type .type__btn.selectedView:hover {
+  //   color: #FFFFFF;
+  //   background: #9a9a9a;
+  // }
 
 
 
@@ -2627,6 +2623,9 @@ ol {
     display: flex;
     align-items: flex-end;
     gap: 5px;
+    img{
+      max-width: 16px;
+    }
   }
 
   .selected::after {

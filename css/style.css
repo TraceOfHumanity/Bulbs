@@ -158,10 +158,6 @@ h6 {
   border-radius: 10px;
 }
 
-.selected1 .radio {
-  display: none;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -839,10 +835,6 @@ h6 {
 .main .type .selectedView {
   color: #FFFFFF;
   background: var(--theme);
-}
-.main .type .type__btn.selectedView:hover {
-  color: #FFFFFF;
-  background: #9a9a9a;
 }
 .main .about__block1 .title {
   margin: 0 0 12px 0;
@@ -2180,6 +2172,9 @@ ol li::before {
   display: flex;
   align-items: flex-end;
   gap: 5px;
+}
+.footer .selected img {
+  max-width: 16px;
 }
 .footer .selected::after {
   content: "";
