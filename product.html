@@ -770,6 +770,8 @@
   <script src="js/colorTheme.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/settingSlider.js"></script>
+  <script src="js/darckBg.js"></script>
+
 
   <script>
     // maindropDowns =======================================================================================
@@ -804,6 +806,8 @@
           dropDownInput.value = this.dataset.value;
           dropDownList.classList.remove('dropdown__list--visible');
           dropDownBtn.classList.remove('dropdown__button--active');
+          dropDownWrapper.classList.remove('shadowBg');
+
 
         })
       });

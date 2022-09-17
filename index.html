@@ -581,6 +581,8 @@
   <script src="js/btnShowMore.js"></script>
   <script src="js/languageWropdown.js"></script>
   <script src="js/colorTheme.js"></script>
+  <script src="js/darckBg.js"></script>
+
   <script>
     // maindropDowns =======================================================================================
     document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
@@ -614,6 +616,7 @@
           dropDownInput.value = this.dataset.value;
           dropDownList.classList.remove('dropdown__list--visible');
           dropDownArrow.classList.remove('dropdown__arrow180');
+          dropDownWrapper.classList.remove('shadowBg');
 
         })
       });
