@@ -2618,6 +2618,10 @@ ol li::before {
     width: 8px;
   }
 
+  ol, ul {
+    margin-left: 12px;
+  }
+
   .gorizont__line {
     display: none;
   }
