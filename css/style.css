@@ -35,6 +35,10 @@ html.midnightblue {
   --theme: #185e8d;
 }
 
+.colorTheme {
+  color: var(--theme);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -611,21 +615,23 @@ h6 {
   margin: 2px 0 0 0;
 }
 .main .choosePosition .choosePosition__right {
-  padding: 6px calc(50px + (200 - 50) * ((100vw - 768px) / (1440 - 768))) 0 15px;
   width: 50%;
 }
 .main .choosePosition .view {
   display: flex;
+  width: 335px;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
 }
 .main .choosePosition .side .side__link {
   font-weight: 400;
   font-size: 24px;
   line-height: 41px;
-  color: #434343;
+  color: var(--theme);
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to right, #434343 75%, transparent 75%);
+  background-image: linear-gradient(to right, var(--theme) 75%, transparent 75%);
   background-position: 1px 35px;
   background-repeat: repeat-x;
   background-size: 7px 2px;
@@ -635,9 +641,13 @@ h6 {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
+.main .choosePosition .side .side__link.selectSide {
+  color: #434343;
+  background-image: linear-gradient(to right, #434343, 75%, transparent 75%);
+}
 .main .choosePosition .side:hover .side__link {
-  color: var(--theme);
-  background-image: linear-gradient(to right, var(--theme) 75%, transparent 75%);
+  color: #434343;
+  background-image: linear-gradient(to right, #434343, 75%, transparent 75%);
 }
 .main .choosePosition + div {
   margin-top: 53px;
@@ -970,6 +980,7 @@ h6 {
 }
 .main .about__realProjects .example h6 {
   margin: 7px 0 0 1px;
+  color: var(--theme);
   padding: 0;
 }
 .main .about__realProjects .example__img {
@@ -1405,6 +1416,10 @@ li {
   margin: 0 0 0 13px;
 }
 
+.side {
+  margin: 0 10px;
+}
+
 ol,
 ul {
   margin-left: 58px;
@@ -1521,13 +1536,25 @@ li.icon-circles::before {
   pointer-events: none;
 }
 
+.dropdown.shadowBg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
 .dropdown__list {
   z-index: 2;
-  height: 137px;
+  height: 250px;
+  overflow: hidden;
   display: none;
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: 44px;
+  top: -8px;
   width: 100%;
   padding: 12px 5px 0 5px;
   border-radius: 0px 0px 10px 10px;
@@ -1547,7 +1574,7 @@ li.icon-circles::before {
   left: 0px;
   z-index: -1;
   width: 100%;
-  height: 94%;
+  height: 100%;
   background: #FFFFFF;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1559,7 +1586,7 @@ li.icon-circles::before {
 .dropdown__list .dropdown__lists {
   border-top: none;
   overflow-y: scroll;
-  height: 117px;
+  height: 95%;
   margin: 2px 0 0 0;
 }
 
@@ -1580,7 +1607,7 @@ li.icon-circles::before {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 28px;
   color: #434343;
   padding: 6px 10px 3px 7px;
   border-bottom: 1px solid #C9C9C9;
@@ -1645,7 +1672,7 @@ li.icon-circles::before {
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  color: #434343;
+  color: #43434382;
   padding-right: 7px;
   transition: all .3s;
   -webkit-transition: all .3s;
@@ -1819,7 +1846,7 @@ h2.icon-pointsArrow {
 
 h2.icon-pointsArrow::before {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 0px;
   font-size: 24px;
 }
@@ -2071,7 +2098,7 @@ ol li::before {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 25px;
   color: #FFFFFF;
 }
 .footer li {

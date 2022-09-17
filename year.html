@@ -145,7 +145,7 @@
                 </div>
                 <div class="lamp__info">
                   <a href="#">
-                    <h5  >
+                    <h5 class="colorTheme">
                       Philips 12789LPB2 Bright White Vision
                     </h5>
                   </a>
@@ -1391,7 +1391,8 @@
   <script src="js/languageWropdown.js"></script>
   <script src="js/colorTheme.js"></script>
   <script src="js/selectTypeBtn.js"></script>
-
+  <script src="js/sides.js"></script>
+  <script src="js/darckBg.js"></script>
 
   <script>
     // maindropDowns =======================================================================================
@@ -1426,6 +1427,7 @@
           dropDownInput.value = this.dataset.value;
           dropDownList.classList.remove('dropdown__list--visible');
           dropDownBtn.classList.remove('dropdown__button--active');
+          dropDownWrapper.classList.remove('shadowBg');
         })
       });
 
@@ -1436,6 +1438,7 @@
           dropDownBtn.classList.remove('dropdown__button--active');
           dropDownList.classList.remove('dropdown__list--visible');
           dropDownArrow.classList.remove('dropdown__arrow180');
+          
         }
       })
 

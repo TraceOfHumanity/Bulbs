@@ -36,6 +36,9 @@ html.saddlebrown {
 html.midnightblue {
   --theme: #185e8d;
 }
+.colorTheme{
+  color: var(--theme);
+}
 
 // /color theme
 
@@ -629,8 +632,6 @@ h6 {
     }
   }
 
-
-
   .show__more .change {
     display: none;
   }
@@ -666,13 +667,15 @@ h6 {
     }
 
     .choosePosition__right {
-      padding: 6px calc(50px + (200 - 50) * ((100vw - 768px) / (1440 - 768))) 0 15px;
       width: 50%;
     }
 
     .view {
       display: flex;
+      width: 335px;
+      flex-wrap: wrap;
       justify-content: space-between;
+      margin: 0;
     }
 
     .side {
@@ -680,10 +683,10 @@ h6 {
         font-weight: 400;
         font-size: 24px;
         line-height: 41px;
-        color: #434343;
+        color: var(--theme);
         display: flex;
         align-items: center;
-        background-image: linear-gradient(to right, #434343 75%, transparent 75%);
+        background-image: linear-gradient(to right, var(--theme) 75%, transparent 75%);
         background-position: 1px 35px;
         background-repeat: repeat-x;
         background-size: 7px 2px;
@@ -693,12 +696,16 @@ h6 {
         -ms-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
       }
+      .side__link.selectSide{
+        color: #434343;
+        background-image: linear-gradient(to right, #434343, 75%, transparent 75%);
+      }
     }
 
     .side:hover {
       .side__link {
-        color: var(--theme);
-        background-image: linear-gradient(to right, var(--theme) 75%, transparent 75%);
+        color: #434343;
+        background-image: linear-gradient(to right, #434343, 75%, transparent 75%);
 
       }
     }
@@ -708,9 +715,6 @@ h6 {
   .choosePosition+div {
     margin-top: 53px;
   }
-
-
-
 
   .product {
     margin-bottom: 93px;
@@ -737,10 +741,6 @@ h6 {
     margin: 0;
     color: #FFFFFF;
   }
-
-
-
-
 
   .type {
     display: flex;
@@ -953,6 +953,7 @@ h6 {
     color: #FFFFFF;
     background: var(--theme);
   }
+
   .about__block1 {
 
     .title {
@@ -971,6 +972,7 @@ h6 {
 
   .bg_car {
     margin: 33px 0 59px 0px;
+
     .coverForCar {
       width: 1100px;
       height: 247px;
@@ -1057,6 +1059,7 @@ h6 {
   ul+h6 {
     margin-top: 20px;
   }
+
   .about__brends {
     margin: 42px 0 35px;
 
@@ -1137,6 +1140,7 @@ h6 {
 
       h6 {
         margin: 7px 0 0 1px;
+        color: var(--theme);
         padding: 0;
       }
     }
@@ -1590,8 +1594,6 @@ h6 {
     margin: -14px 0 0 0;
     overflow: hidden;
 
-
-
     .slick-list {
       overflow: hidden;
     }
@@ -1600,20 +1602,9 @@ h6 {
       display: flex;
     }
 
-
-
-
-
-
     .slick-arrow {
       font-size: 0;
     }
-
-
-
-
-
-
 
   }
 
@@ -1621,10 +1612,6 @@ h6 {
     width: 635px;
     margin: -29px 0 0 0;
 
-
-
-
-
     .slick-list {
       overflow: hidden;
     }
@@ -1633,20 +1620,9 @@ h6 {
       display: flex;
     }
 
-
-
-
-
-
     .slick-arrow {
       font-size: 0;
     }
-
-
-
-
-
-
 
   }
 }
@@ -1718,14 +1694,20 @@ li {
   }
 }
 
+.side {
+  margin: 0 10px;
+}
+
 ol,
-ul{
+ul {
   margin-left: 58px;
 }
+
 .product ol,
-.product ul{
+.product ul {
   margin-left: 0px;
 }
+
 .icon-circles {
   position: relative;
 }
@@ -1836,13 +1818,25 @@ li.icon-circles::before {
 
 }
 
+.dropdown.shadowBg::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
 .dropdown__list {
   z-index: 2;
-  height: 137px;
+  height: 250px;
+  overflow: hidden;
   display: none;
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: 44px;
+  top: -8px;
   width: 100%;
   padding: 12px 5px 0 5px;
   border-radius: 0px 0px 10px 10px;
@@ -1862,7 +1856,7 @@ li.icon-circles::before {
   left: 0px;
   z-index: -1;
   width: 100%;
-  height: 94%;
+  height: 100%;
   background: #FFFFFF;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1875,7 +1869,7 @@ li.icon-circles::before {
 .dropdown__list .dropdown__lists {
   border-top: none;
   overflow-y: scroll;
-  height: 117px;
+  height: 95%;
   margin: 2px 0 0 0;
 
 }
@@ -1898,7 +1892,7 @@ li.icon-circles::before {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 28px;
   color: #434343;
   padding: 6px 10px 3px 7px;
   border-bottom: 1px solid #C9C9C9;
@@ -1965,7 +1959,7 @@ li.icon-circles::before {
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  color: #434343;
+  color: #43434382;
   padding-right: 7px;
   transition: all .3s;
   -webkit-transition: all .3s;
@@ -2121,7 +2115,6 @@ li.icon-circles::before {
 
 }
 
-
 h1 {
   position: relative;
   font-family: 'Roboto';
@@ -2137,6 +2130,7 @@ h1 {
 h1.icon-pointsArrow {
   padding-left: 32px;
 }
+
 h1.icon-pointsArrow::before {
   position: absolute;
   top: 7px;
@@ -2157,13 +2151,14 @@ h2 {
   margin: 0 0 28px 0;
 
 }
+
 h2.icon-pointsArrow {
   padding-left: 32px;
 }
 
 h2.icon-pointsArrow::before {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 0px;
   font-size: 24px;
 }
@@ -2182,6 +2177,7 @@ h3 {
 h3.icon-pointsArrow {
   padding-left: 32px;
 }
+
 h3.icon-pointsArrow::before {
   position: absolute;
   font-size: 24px;
@@ -2205,6 +2201,7 @@ h4 {
 h4.icon-pointsArrow {
   padding-left: 32px;
 }
+
 h4.icon-pointsArrow::before {
   position: absolute;
   font-size: 24px;
@@ -2225,9 +2222,10 @@ h5 {
   color: #434343;
 }
 
-h5.icon-pointsArrow{
+h5.icon-pointsArrow {
   padding-left: 32px;
 }
+
 h5.icon-pointsArrow::before {
   position: absolute;
   font-size: 24px;
@@ -2256,6 +2254,7 @@ h6.icon-pointsArrow::before {
   top: 4px;
   left: 0;
 }
+
 h6.icon-pointsArrow {
   padding-left: 32px;
 }
@@ -2395,6 +2394,7 @@ ol {
 
 .footer {
   margin: 20px 0 0 0;
+
   .footer__bottom-icons {
     display: flex;
     align-items: center;
@@ -2405,6 +2405,7 @@ ol {
     column-gap: 96px;
 
   }
+
   .footerIco {
     width: 50px;
     height: 53px;
@@ -2412,7 +2413,8 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+
+    img {
       max-width: 100%;
     }
   }
@@ -2422,7 +2424,7 @@ ol {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 25px;
     color: #FFFFFF;
 
   }
@@ -2532,7 +2534,7 @@ ol {
     }
   }
 
-  
+
 
   .select-box {
     display: flex;
@@ -2576,7 +2578,8 @@ ol {
     display: flex;
     align-items: flex-end;
     gap: 5px;
-    img{
+
+    img {
       max-width: 16px;
     }
   }
@@ -2629,6 +2632,7 @@ ol {
     }
 
   }
+
   .select-box .option:hover {
     background: #414b57;
   }
